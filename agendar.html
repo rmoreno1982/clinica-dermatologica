@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="border-b border-gray-300 bg-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial Dermatología</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-black">Inicio</a>
+                    <a href="servicios.html" class="text-sm font-medium text-gray-600 hover:text-black">Servicios</a>
+                    <a href="equipo.html" class="text-sm font-medium text-gray-600 hover:text-black">Acerca de la
+                        Clínica</a>
+                    <a href="agendar.html" class="text-sm font-medium text-black border-b-2 border-black ">Agendar
+                        Cita</a>
+                    <a href="contacto.html" class="text-sm font-medium text-gray-600 hover:text-black">Contacto</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-300">
+                <a href="index.html" class="block py-2 text-sm font-medium text-gray-600">Inicio</a>
+                <a href="servicios.html" class="block py-2 text-sm font-medium text-gray-600">Servicios</a>
+                <a href="equipo.html" class="block py-2 text-sm font-medium text-gray-600">Acerca de la Clínica</a>
+                <a href="agendar.html" class="block py-2 text-sm font-bold text-black ">Agendar Cita</a>
+                <a href="contacto.html" class="block py-2 text-sm font-medium text-gray-600">Contacto</a>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="bg-gray-50 border-b border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h1 class="text-4xl font-bold text-black mb-4">Agendar Cita</h1>
+            <p class="text-xl text-gray-600 max-w-3xl">Reserva tu consulta de forma rápida y fácil con nuestros
+                especialistas</p>
+        </div>
+    </section>
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav class="flex text-sm text-gray-600">
+                <a href="index.html" class="hover:text-black">Inicio</a>
+                <span class="mx-2">/</span>
+                <span class="text-black font-medium">Agendar Cita</span>
+            </nav>
+        </div>
+    </div>
+    <div class="py-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Elige tu forma de agendar</h2>
+                <p class="text-lg text-gray-600"></p>
+            </div>
+            <div class="card bg-black text-white mb-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Agenda con Medilink</h3>
+                        <p class="text-gray-300">Sistema rápido. Ve disponibilidad en tiempo real</p>
+                    </div><button id="medilink-btn" class="btn-primary-inverse">Ir a Medilink →</button>
+                </div>
+            </div>
+            <div class="flex items-center justify-center my-8">
+                <div class="border-t border-gray-300 flex-grow"></div><span
+                    class="px-4 text-gray-500 font-medium">O</span>
+                <div class="border-t border-gray-300 flex-grow"></div>
+            </div>
+            <div class="card">
+                <h3 class="text-2xl font-bold mb-2">Formulario de Solicitud</h3>
+                <p class="text-gray-600 mb-6">Te contactaremos para confirmar</p>
+                <form>
+                    <div class="mb-4"><label>Nombre Completo *</label><input type="text" required
+                            placeholder="Juan Pérez"></div>
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div><label>Email *</label><input type="email" required placeholder="juan@ejemplo.com"></div>
+                        <div><label>Teléfono *</label><input type="tel" required placeholder="+56 9 1234 5678"></div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div><label>Tipo de Servicio *</label><select required>
+                                <option value="">Selecciona</option>
+                                <option>Dermatología Clínica</option>
+                                <option>Medicina Estética</option>
+                                <option>Consulta General</option>
+                            </select></div>
+                        <div><label>Doctor</label><select>
+                                <option>Sin preferencia</option>
+                                <option>Dra. Carolyn Rodríguez</option>
+                                <option>Dr. Claudio Sotomayor</option>
+                            </select></div>
+                    </div>
+                    <div class="mb-4"><label>Mensaje</label><textarea rows="4"
+                            placeholder="Describe tu consulta..."></textarea></div><button type="submit">Enviar
+                        Solicitud</button>
+                    <p class="text-sm text-gray-500 text-center mt-4">* Te contactaremos en 24 horas</p>
+                </form>
+            </div>
+            <div class="mt-12 grid md:grid-cols-3 gap-6">
+                <div class="card text-center">
+                    <div class="text-3xl mb-2">📞</div>
+                    <h3 class="font-bold mb-2">Llama Ahora</h3>
+                    <p class="text-sm text-gray-600">+56 9 XXXX XXXX</p>
+                </div>
+                <div class="card text-center">
+                    <div class="text-3xl mb-2">🕐</div>
+                    <h3 class="font-bold mb-2">Horarios</h3>
+                    <p class="text-sm text-gray-600">L-V: 9:00-18:00</p>
+                </div>
+                <div class="card text-center">
+                    <div class="text-3xl mb-2">💬</div>
+                    <h3 class="font-bold mb-2">WhatsApp</h3>
+                    <p class="text-sm text-gray-600">Consultas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-black text-white border-t border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Clínica Consistorial Dermatología</h3>
+                    <p class="text-sm text-gray-400">Cuidado y Belleza de la Piel</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contacto</h3>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-gray-400">📍 AV. CONSISTORIAL 5791, PEÑALOLÉN</p>
+                        <p class="text-gray-400">📞 +56 9 XXXX XXXX</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Horarios</h3>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <p>Lunes a Viernes: 9:00 – 18:00</p>
+                        <p>Sábados: 9:00 – 13:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>© 2025 Clínica Consistorial Dermatología. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer><a href="https://wa.me/56912345678" target="_blank" class="whatsapp-float">💬</a>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Clínica Consistorial Dermatología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white">
+    <!-- Header -->
+    <header class="border-b border-gray-300 bg-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial Dermatología</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-black">Inicio</a>
+                    <a href="servicios.html"
+                        class="text-sm font-medium text-black border-b-2 border-black">Servicios</a>
+                    <a href="equipo.html" class="text-sm font-medium text-gray-600 hover:text-black">Acerca de la
+                        Clínica</a>
+                    <a href="agendar.html" class="text-sm font-medium text-gray-600 hover:text-black">Agendar Cita</a>
+                    <a href="contacto.html" class="text-sm font-medium text-gray-600 hover:text-black">Contacto</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-300">
+                <a href="index.html" class="block py-2 text-sm font-medium text-gray-600">Inicio</a>
+                <a href="servicios.html" class="block py-2 text-sm font-bold text-black">Servicios</a>
+                <a href="equipo.html" class="block py-2 text-sm font-medium text-gray-600">Acerca de la Clínica</a>
+                <a href="agendar.html" class="block py-2 text-sm font-medium text-gray-600">Agendar Cita</a>
+                <a href="contacto.html" class="block py-2 text-sm font-medium text-gray-600">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-50 border-b border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h1 class="text-4xl font-bold text-black mb-4">Nuestros Servicios</h1>
+            <p class="text-xl text-gray-600 max-w-3xl">Atención especializada en dermatología clínica y medicina
+                estética con resultados comprobados</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white border-b border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav class="flex text-sm text-gray-600">
+                <a href="index.html" class="hover:text-black">Inicio</a>
+                <span class="mx-2">/</span>
+                <span class="text-black font-medium">Servicios</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-black mb-4">Áreas de Especialización</h2>
+            </div>
+
+            <!-- Dermatología Clínica -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-black mb-2">Dermatología Clínica</h2>
+                <p class="text-gray-600 mb-8">Diagnóstico, seguimiento y resolución de patologías cutáneas con rigor
+                    médico</p>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card">
+
+                        <div class="icon-box">👁️</div>
+                        <h3 class="text-xl font-bold mb-3">Dermatoscopía digital</h3>
+                        <p class="text-gray-600">Control preventivo y detección temprana de lunares.</p>
+                    </div>
+                    <div class="card">
+
+                        <div class="icon-box">✂️</div>
+                        <h3 class="text-xl font-bold mb-3">Cirugía menor ambulatoria</h3>
+                        <p class="text-gray-600">Extirpación de quistes, verrugas, tumores benignos y biopsias.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon-box">🩺</div>
+                        <h3 class="text-xl font-bold mb-3">Consulta dermatológica general</h3>
+                        <p class="text-gray-600">Acné, rosácea, dermatitis, psoriasis y más.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medicina Estética -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-black mb-2">Medicina Estética</h2>
+                <p class="text-gray-600 mb-8">Refresca, previene el envejecimiento y recupera tu seguridad personal
+                    cuidando la armonía natural de tu rostro.</p>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card">
+                        <div class="icon-box">💉</div>
+                        <h3 class="text-xl font-bold mb-3">Atenuación de líneas de expresión</h3>
+                        <p class="text-gray-600">Toxina botulínica de precisión médica.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon-box">💧</div>
+                        <h3 class="text-xl font-bold mb-3">Restauración de volúmenes</h3>
+                        <p class="text-gray-600">Ácido hialurónico y soporte facial.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon-box">✨</div>
+                        <h3 class="text-xl font-bold mb-3">Calidad de piel y bioestimulación</h3>
+                        <p class="text-gray-600">Sculptra, Radiesse, peelings médicos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-gray-50 border-2 border-gray-300 p-8 text-center">
+                <h3 class="text-2xl font-bold mb-4">¿Interesado en algún tratamiento?</h3>
+                <p class="text-gray-600 mb-6">Agenda tu consulta y recibe una evaluación personalizada</p>
+                <a href="agendar.html" class="btn-primary">Agendar Consulta →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Clínica Consistorial Dermatología</h3>
+                    <p class="text-sm text-gray-400">Cuidado y Belleza de la Piel</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contacto</h3>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-gray-400">📍 AV. CONSISTORIAL 5791, PEÑALOLÉN</p>
+                        <p class="text-gray-400">📞 +56 9 XXXX XXXX</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Horarios</h3>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <p>Lunes a Viernes: 9:00 – 18:00</p>
+                        <p>Sábados: 9:00 – 13:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>© 2025 Clínica Consistorial Dermatología. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/56912345678?text=Hola,%20me%20gustaría%20agendar%20una%20consulta." target="_blank"
+        class="whatsapp-float">💬</a>
+    <script src="script.js"></script>
+</body>
+
+</html>
