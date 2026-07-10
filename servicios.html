@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Clínica Consistorial Dermatología</title>
+    <title>Servicios - Clínica Consistorial</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="bg-white">
@@ -14,15 +19,19 @@
     <header class="border-b border-gray-300 bg-white sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial Dermatología</a>
+                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial</a>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-black">Inicio</a>
                     <a href="servicios.html"
                         class="text-sm font-medium text-black border-b-2 border-black">Servicios</a>
-                    <a href="equipo.html" class="text-sm font-medium text-gray-600 hover:text-black">Acerca de la
+
+                    <a href="equipo.html" class="text-sm font-medium text-gray-600 hover:text-black">Equipo </a>
+                    <a href="clinica.html" class="text-sm font-medium text-gray-600 hover:text-black">Acerca de la
                         Clínica</a>
-                    <a href="agendar.html" class="text-sm font-medium text-gray-600 hover:text-black">Agendar Cita</a>
                     <a href="contacto.html" class="text-sm font-medium text-gray-600 hover:text-black">Contacto</a>
+
+                    <a href="https://www.softwaremedilink.com/" class="text-sm font-medium agenda">Agendar
+                        Cita</a>
                 </nav>
                 <button id="mobile-menu-btn" class="md:hidden p-2">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -42,11 +51,15 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gray-50 border-b border-gray-300">
+    <section class="bg-gray-50 border-b border-gray-300 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <h1 class="text-4xl font-bold text-black mb-4">Nuestros Servicios</h1>
-            <p class="text-xl text-gray-600 max-w-3xl">Atención especializada en dermatología clínica y medicina
-                estética con resultados comprobados</p>
+            <h1 class="text-4xl font-bold text-black mb-2">Nuestros Servicios</h1>
+            <p class="text-1xl font-bold text-black mb-4">DERMATOLOGÍA INTEGRAL EN CADA ETAPA</p>
+            <p class="text-xl text-gray-600 mx-auto max-w-3xl text-center">Desde la consulta general hasta
+                procedimientos
+                quirúrgicos y
+                estéticos, contamos con tecnología y protocolos actualizados para
+                el cuidado de tu piel.</p>
         </div>
     </section>
 
@@ -62,69 +75,234 @@
     </div>
 
     <!-- Main Content -->
-    <div class="py-16">
+    <div class="py-1">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-black mb-4">Áreas de Especialización</h2>
-            </div>
 
-            <!-- Dermatología Clínica -->
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold text-black mb-2">Dermatología Clínica</h2>
-                <p class="text-gray-600 mb-8">Diagnóstico, seguimiento y resolución de patologías cutáneas con rigor
-                    médico</p>
 
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="card">
 
-                        <div class="icon-box">👁️</div>
-                        <h3 class="text-xl font-bold mb-3">Dermatoscopía digital</h3>
-                        <p class="text-gray-600">Control preventivo y detección temprana de lunares.</p>
-                    </div>
-                    <div class="card">
 
-                        <div class="icon-box">✂️</div>
-                        <h3 class="text-xl font-bold mb-3">Cirugía menor ambulatoria</h3>
-                        <p class="text-gray-600">Extirpación de quistes, verrugas, tumores benignos y biopsias.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon-box">🩺</div>
-                        <h3 class="text-xl font-bold mb-3">Consulta dermatológica general</h3>
-                        <p class="text-gray-600">Acné, rosácea, dermatitis, psoriasis y más.</p>
-                    </div>
+
+
+
+
+            <!-- Servicio 1 -->
+            <article class="grid lg:grid-cols-2 gap-20 items-center py-16 border-b border-gray-200">
+
+                <!-- Imagen -->
+                <div>
+                    <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Foto Consulta 
+Dermatológica" class="rounded-2xl w-full aspect-[4/3] object-cover">
                 </div>
-            </div>
 
-            <!-- Medicina Estética -->
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold text-black mb-2">Medicina Estética</h2>
-                <p class="text-gray-600 mb-8">Refresca, previene el envejecimiento y recupera tu seguridad personal
-                    cuidando la armonía natural de tu rostro.</p>
+                <!-- Contenido -->
+                <div>
 
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="card">
-                        <div class="icon-box">💉</div>
-                        <h3 class="text-xl font-bold mb-3">Atenuación de líneas de expresión</h3>
-                        <p class="text-gray-600">Toxina botulínica de precisión médica.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon-box">💧</div>
-                        <h3 class="text-xl font-bold mb-3">Restauración de volúmenes</h3>
-                        <p class="text-gray-600">Ácido hialurónico y soporte facial.</p>
-                    </div>
-                    <div class="card">
-                        <div class="icon-box">✨</div>
-                        <h3 class="text-xl font-bold mb-3">Calidad de piel y bioestimulación</h3>
-                        <p class="text-gray-600">Sculptra, Radiesse, peelings médicos.</p>
-                    </div>
+                    <span class="font-semibold text-gray-600">01</span>
+
+                    <h2 class="font-title text-6xl leading-none mt-2 mb-6">
+                        Consulta<br>Dermatológica
+                    </h2>
+
+                    <h3 class="font-semibold uppercase tracking-wide text-2xl text-gray-600 mb-8">
+                        Examen físico / Diagnóstico y seguimiento
+                    </h3>
+
+                    <p class="text-gray-600 mb-8">
+                        Evaluamos y tratamos las distintas patologías cutáneas con un enfoque clínico actualizado,
+                        acompañando al paciente en cada etapa de su tratamiento.
+                    </p>
+
+                    <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-10">
+                        <li>Acné y rosácea</li>
+                        <li>Dermatitis y psoriasis</li>
+                        <li>Evaluación de lunares</li>
+                        <li>Lesiones malignas</li>
+                        <li>Manchas en la piel</li>
+                        <li>Problemas en pelo y uñas</li>
+                    </ul>
+
+                    <a href="#" class="btn-outline">
+                        Agendar Consulta
+                    </a>
+
                 </div>
-            </div>
+
+            </article>
+
+            <!-- Servicio 2 -->
+            <article class="grid lg:grid-cols-2 gap-20 items-center py-16 border-b border-gray-200">
+
+                <!-- Texto -->
+                <div>
+
+                    <span class="font-semibold text-gray-600">02</span>
+
+                    <h2 class="font-title text-6xl leading-none mt-2 mb-6">
+                        Cirugía<br>Dermatológica<br>Ambulatoria
+                    </h2>
+
+                    <h3 class="font-semibold uppercase tracking-wide text-2xl text-gray-600 mb-8">
+                        Procedimientos seguros
+                    </h3>
+
+                    <p class="text-gray-600 mb-8">
+                        Realizamos procedimientos quirúrgicos menores en pabellón de cirugía menor y salas
+                        certificadas.
+                    </p>
+
+                    <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-10">
+                        <li>Biopsias de piel</li>
+                        <li>Extirpación de lunares</li>
+                        <li>Quistes y tumores benignos</li>
+                        <li>Tumores malignos</li>
+                        <li>Crioterapia</li>
+                    </ul>
+
+                    <a href="#" class="btn-outline">
+                        Agendar Consulta
+                    </a>
+
+                </div>
+
+                <!-- Imagen -->
+                <div>
+                    <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Foto Cirugía Dermatológica Ambulatoria"
+                        class="rounded-2xl w-full aspect-[4/3] object-cover">
+                </div>
+
+            </article>
+
+            <!-- Servicio 3 -->
+            <article class="grid lg:grid-cols-2 gap-20 items-center py-16">
+
+                <!-- Imagen -->
+                <div>
+                    <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Foto Dermatología Estética"
+                        class="rounded-2xl w-full aspect-[4/3] object-cover">
+                </div>
+
+                <!-- Texto -->
+                <div>
+
+                    <span class="font-semibold text-gray-600">03</span>
+
+                    <h2 class="font-title text-6xl leading-none mt-2 mb-6">
+                        Dermatología<br>Estética
+                    </h2>
+
+                    <h3 class="font-semibold uppercase tracking-wide text-2xl text-gray-600 mb-8">
+                        Tratamientos personalizados con resultados naturales
+                    </h3>
+
+                    <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-10">
+                        <li>Rejuvenecimiento facial</li>
+                        <li>Luminosidad y calidad de la piel</li>
+                        <li>Corrección de manchas</li>
+                        <li>Tratamiento de cicatrices de acné</li>
+                    </ul>
+
+                    <a href="#" class="btn-outline">
+                        Agendar Consulta
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Servicio 4 -->
+            <article class="grid lg:grid-cols-2 gap-20 items-center py-16 border-b border-gray-200">
+
+                <!-- Texto -->
+                <div>
+
+                    <span class="font-semibold text-gray-600">04</span>
+
+                    <h2 class="font-title text-6xl leading-none mt-2 mb-6">
+                        Tecnología Laser
+                    </h2>
+
+                    <h3 class="font-semibold uppercase tracking-wide text-2xl text-gray-600 mb-8">
+                        Tratamientos laser ultima generación
+                    </h3>
+
+                    <p class="text-gray-600 mb-8">
+                        Contamos con un sistema LASER NEW HARMONY para diferentes tratamientos.
+                    </p>
+
+                    <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-10">
+                        <li>Unificación del tono de piel</li>
+                        <li>Rejuvenecimiento facial</li>
+                        <li>Tratamiento de manchas, estrias, cicatrices</li>
+                        <li>Tratamiento de eritema facial y telengectasias (rosácea)</li>
+                    </ul>
+
+                    <a href="#" class="btn-outline">
+                        Agendar Consulta
+                    </a>
+
+                </div>
+
+                <!-- Imagen -->
+                <div>
+                    <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Foto TECNOLOGÍA LÁSER"
+                        class="rounded-2xl w-full aspect-[4/3] object-cover">
+                </div>
+
+            </article>
+
+
+            <!-- Servicio 5 -->
+            <article class="grid lg:grid-cols-2 gap-20 items-center py-16">
+
+                <!-- Imagen -->
+                <div>
+                    <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Foto Criptoterapia"
+                        class="rounded-2xl w-full aspect-[4/3] object-cover">
+                </div>
+
+                <!-- Texto -->
+                <div>
+
+                    <span class="font-semibold text-gray-600">05</span>
+
+                    <h2 class="font-title text-6xl leading-none mt-2 mb-6">
+                        Criptoterapia
+                    </h2>
+
+                    <h3 class="font-semibold uppercase tracking-wide text-2xl text-gray-600 mb-8">
+                        Tratamiento con congelación.
+                    </h3>
+
+                    <p class="text-gray-600 mb-8">
+                        Tratamiento mediante frio que se utiliza para eliminar lesiones benignas de la piel
+                    </p>
+
+                    <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-10">
+                        <li>Verrugas</li>
+                        <li>Manchas solares (léntigos)</li>
+                        <li>Queratosis seborreicas</li>
+                        <li>Pequeños tumores benignos</li>
+                    </ul>
+
+                    <a href="#" class="btn-outline">
+                        Agendar Consulta
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+
 
             <!-- CTA -->
-            <div class="bg-gray-50 border-2 border-gray-300 p-8 text-center">
-                <h3 class="text-2xl font-bold mb-4">¿Interesado en algún tratamiento?</h3>
-                <p class="text-gray-600 mb-6">Agenda tu consulta y recibe una evaluación personalizada</p>
-                <a href="agendar.html" class="btn-primary">Agendar Consulta →</a>
+            <div class="bg-black text-white p-8 mb-4 text-center">
+                <p class=" font-bold mb-1">¿Tienes alguna duda sobre que tratamiento necesitas?</p>
+                <h2 class="text-4xl text-gray-300 mb-1">Conversemos sobre tu piel</h2>
+                <p class="text-gray-400 mb-6">Agenda una hora de consulta y te orientaremos sobre el tratamiento más
+                    adecuado para ti.</p>
+                <a href="agendar.html" class="btn-outline bg-white text-black hover:bg-gray-200">Agendar Consulta →</a>
             </div>
         </div>
     </div>

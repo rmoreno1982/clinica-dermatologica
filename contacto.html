@@ -7,21 +7,47 @@
     <title>Contacto</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        }
+
+        input,
+        textarea,
+        select {
+            transition: border-color 0.2s ease;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #4b5563;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header class="border-b border-gray-300 bg-white sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial Dermatología</a>
+                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial</a>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-black">Inicio</a>
                     <a href="servicios.html" class="text-sm font-medium text-gray-600 hover:text-black">Servicios</a>
-                    <a href="equipo.html" class="text-sm font-medium text-gray-600 hover:text-black">Acerca de la
+                    <a href="equipo.html" class="text-sm font-medium text-gray-600 hover:text-black">Equipo</a>
+                    <a href="clinica.html" class="text-sm font-medium text-gray-600 hover:text-black">Acerca de la
                         Clínica</a>
-                    <a href="agendar.html" class="text-sm font-medium text-gray-600 hover:text-black">Agendar
-                        Cita</a>
                     <a href="contacto.html" class="text-sm font-medium text-black border-b-2 border-black ">Contacto</a>
+                    <a href="https://www.softwaremedilink.com/" class="text-sm font-medium agenda">Agendar
+                        Cita</a>
                 </nav>
                 <button id="mobile-menu-btn" class="md:hidden p-2">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,11 +66,12 @@
         </div>
     </header>
     <!-- Hero Section -->
-    <section class="bg-gray-50 border-b border-gray-300">
+    <section class="bg-gray-50 border-b border-gray-300 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <h1 class="text-4xl font-bold text-black mb-4">Contacto</h1>
-            <p class="text-xl text-gray-600 max-w-3xl">Te atenderemos con gusto. Puedes comunicarte con nosotros por
-                cualquier medio</p>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Escríbenos, llámanos o completa el formulario y te
+                contactaremos
+                a la brevedad.</p>
         </div>
     </section>
     <!-- Breadcrumb -->
@@ -58,83 +85,172 @@
         </div>
     </div>
     <div class="py-16">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">Formas de Contactarnos</h2>
-                <p class="text-lg text-gray-600"></p>
-            </div>
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-2xl font-bold mb-6">Información de Contacto</h2>
-                    <div class="space-y-6">
-                        <div class="card">
-                            <div class="flex items-start">
-                                <div class="text-2xl mr-4">📍</div>
-                                <div>
-                                    <h3 class="font-bold text-lg mb-2">Dirección</h3>
-                                    <p class="text-gray-600">AV. CONSISTORIAL 5791, PEÑALOLÉN</p>
-                                    <p class="text-sm text-gray-500 mt-2">Santiago, Chile</p>
-                                </div>
-                            </div>
-                            <div class="mt-6">
-                                <iframe src="https://maps.google.com/maps?q=AV+CONSISTORIAL+5791+PEÑALOLÉN&output=embed"
-                                    width="100%" height="300" frameborder="0"></iframe>
-                            </div>
 
-                        </div>
 
-                        <div class="card">
-                            <div class="flex items-start">
-                                <div class="text-2xl mr-4">📞</div>
-                                <div>
-                                    <h3 class="font-bold text-lg mb-2">Teléfono y WhatsApp</h3>
-                                    <p class="text-gray-600">+56 9 XXXX XXXX</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="flex items-start">
-                                <div class="text-2xl mr-4">🕐</div>
-                                <div>
-                                    <h3 class="font-bold text-lg mb-2">Horario</h3>
-                                    <p class="text-gray-600">Lunes a Viernes: 9:00 – 18:00</p>
-                                    <p class="text-gray-600">Sábados: 9:00 – 13:00</p>
-                                </div>
-                            </div>
-                        </div>
 
+
+
+
+
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8">
+
+            <!-- Columna Izquierda: Información de Contacto -->
+            <div class="bg-gray-200 p-8 rounded-lg">
+
+                <!-- Dirección -->
+                <div class="flex items-start mb-8">
+                    <div
+                        class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center text-white mr-4 flex-shrink-0">
+                        📍
                     </div>
-
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">DIRECCIÓN</h3>
+                        <p class="text-gray-600 text-sm">Av. Consistorial 5791, Oficina 84 Peñalolén, Santiago
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <div class="card">
-                        <h3 class="text-2xl font-bold mb-2">Envíanos un Mensaje</h3>
-                        <p class="text-gray-600 mb-6">Te responderemos a la brevedad</p>
-                        <form>
-                            <div class="mb-4"><label>Nombre *</label><input type="text" required
-                                    placeholder="Tu nombre"></div>
-                            <div class="mb-4"><label>Email *</label><input type="email" required
-                                    placeholder="tu@email.com"></div>
-                            <div class="mb-4"><label>Asunto *</label><input type="text" required
-                                    placeholder="Motivo de consulta"></div>
-                            <div class="mb-4"><label>Mensaje *</label><textarea rows="6" required
-                                    placeholder="Escribe tu mensaje..."></textarea></div><button type="submit">Enviar
-                                Mensaje →</button>
-                            <p class="text-sm text-gray-500 text-center mt-4">* Todos los campos obligatorios</p>
-                        </form>
+
+                <div class="border-t border-gray-300 my-6"></div>
+
+                <!-- Teléfono / WhatsApp -->
+                <div class="flex items-start mb-8">
+                    <div
+                        class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center text-white mr-4 flex-shrink-0">
+                        📞
                     </div>
-                    <div class="card mt-6">
-                        <div class="flex items-start">
-                            <div class="text-2xl mr-4">📱</div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">TELÉFONO / WHATSAPP</h3>
+                        <p class="text-gray-600 text-sm">+56 9 XXXX XXXX</p>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-300 my-6"></div>
+
+                <!-- Correo Electrónico -->
+                <div class="flex items-start mb-8">
+                    <div
+                        class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center text-white mr-4 flex-shrink-0">
+                        ✉️
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">CORREO ELECTRÓNICO</h3>
+                        <p class="text-gray-600 text-sm">contacto@clinicaconsistorial.com</p>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-300 my-6"></div>
+
+                <!-- Horario de Atención -->
+                <div class="flex items-start mb-8">
+                    <div
+                        class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center text-white mr-4 flex-shrink-0">
+                        🕐
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">HORARIO DE ATENCIÓN</h3>
+                        <p class="text-gray-600 text-sm">Lunes a viernes: 09:00 – 18:00</p>
+                        <p class="text-gray-600 text-sm">Sábado: 09:00 – 12:00</p>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-300 my-6"></div>
+
+                <!-- Instagram -->
+                <div class="flex items-start mb-8">
+                    <div
+                        class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center text-white mr-4 flex-shrink-0">
+                        📱
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">INSTAGRAM</h3>
+                        <p class="text-gray-600 text-sm">@clinicaconsistorial</p>
+                    </div>
+                </div>
+
+                <!-- Mapa / Ubicación -->
+                <div class="mt-8 bg-gray-300 rounded-lg h-auto items-center justify-center">
+                    <div class="text-center text-gray-600">
+                        <iframe src="https://maps.google.com/maps?q=AV+CONSISTORIAL+5791+PEÑALOLÉN&output=embed"
+                            width="100%" height="400" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Columna Derecha: Formulario -->
+            <div>
+                <div class="bg-white border-2 border-gray-300 rounded-lg p-8 mb-6">
+                    <h2 class="text-3xl font-serif font-normal text-gray-800 mb-8">Solicita tu Hora</h2>
+
+                    <form id="contactForm">
+                        <!-- Nombre y Teléfono -->
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
                             <div>
-                                <h3 class="font-bold text-lg mb-2">Redes Sociales</h3>
-                                <p class="text-gray-600">@clinicaconsistorial</p>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">NOMBRE
+                                    COMPLETO</label>
+                                <input type="text" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-gray-600"
+                                    placeholder="">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">TELÉFONO</label>
+                                <input type="tel" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-gray-600"
+                                    placeholder="">
                             </div>
                         </div>
-                    </div>
+
+                        <!-- Correo y Servicio -->
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">CORREO</label>
+                                <input type="email" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-gray-600"
+                                    placeholder="">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">SERVICIO DE
+                                    INTERÉS</label>
+                                <select required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-gray-600 text-gray-500">
+                                    <option value="">Consulta Dermatológica •</option>
+                                    <option value="dermatologia">Dermatología Clínica</option>
+                                    <option value="estetica">Medicina Estética</option>
+                                    <option value="dermatoscopia">Dermatoscopía Digital</option>
+                                    <option value="cirugia">Cirugía Menor</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Mensaje -->
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">MENSAJE</label>
+                            <textarea rows="5"
+                                class="w-full px-4 py-3 border border-gray-300 rounded focus:border-gray-600 text-gray-500"
+                                placeholder="Cuéntanos brevemente tu consulta..."></textarea>
+                        </div>
+
+                        <!-- Botón Enviar -->
+                        <button type="submit"
+                            class="w-full bg-gray-700 text-white py-4 rounded font-medium hover:bg-gray-800 transition-colors">
+                            ENVIAR SOLICITUD
+                        </button>
+
+                        <p class="text-sm text-gray-500 text-center mt-4">
+                            Te contactaremos dentro del horario de atención para confirmar tu hora.
+                        </p>
+                    </form>
                 </div>
+
+
             </div>
+
         </div>
+
+
+
+
+
     </div>
     <footer class="bg-black text-white border-t border-gray-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

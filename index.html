@@ -7,6 +7,12 @@
     <title>Clínica Consistorial Dermatología - Inicio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="bg-white">
@@ -14,16 +20,19 @@
     <header class="border-b border-gray-300 bg-white sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial Dermatología</a>
+                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial</a>
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html" class="text-sm font-medium text-black border-b-2 border-black">Inicio</a>
                     <a href="servicios.html" class="text-sm font-medium text-gray-600 hover:text-black">Servicios</a>
-                    <a href="equipo.html" class="text-sm font-medium text-gray-600 hover:text-black">Acerca de la
+                    <a href="equipo.html" class="text-sm font-medium text-gray-600 hover:text-black">Equipo</a>
+                    <a href="clinica.html" class="text-sm font-medium text-gray-600 hover:text-black">Acerca de la
                         Clínica</a>
-                    <a href="agendar.html" class="text-sm font-medium text-gray-600 hover:text-black">Agendar Cita</a>
+
                     <a href="contacto.html" class="text-sm font-medium text-gray-600 hover:text-black">Contacto</a>
+                    <a href="https://www.softwaremedilink.com/" class="text-sm font-medium agenda">Agendar
+                        Cita</a>
                 </nav>
 
                 <!-- Mobile menu button -->
@@ -39,194 +48,403 @@
             <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-300">
                 <a href="index.html" class="block py-2 text-sm font-bold text-black">Inicio</a>
                 <a href="servicios.html" class="block py-2 text-sm font-medium text-gray-600">Servicios</a>
-                <a href="equipo.html" class="block py-2 text-sm font-medium text-gray-600">Acerca de la Clínica</a>
-                <a href="agendar.html" class="block py-2 text-sm font-medium text-gray-600">Agendar Cita</a>
+                <a href="equipo.html" class="block py-2 text-sm font-medium text-gray-600">Equipo</a>
+                <a href="clinica.html" class="block py-2 text-sm font-medium text-gray-600">Acerca de la Clínica</a>
+
                 <a href="contacto.html" class="block py-2 text-sm font-medium text-gray-600">Contacto</a>
+                <a href="agendar.html" class="block py-2 text-sm font-medium text-gray-600">Agendar Cita</a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
+
+
+
+
     <section class="bg-white border-b border-gray-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="max-w-3xl">
-                <h1 class="text-5xl font-bold text-black mb-6">Clínica Consistorial Dermatología</h1>
-                <p class="text-2xl text-gray-600 mb-4">Cuidado y Belleza de la Piel</p>
-                <p class="text-lg text-gray-600 mb-8">
-                    Atención médica integral para la piel, combinando rigor clínico con vanguardia estética.
-                    Resultados naturales con respaldo científico.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="agendar.html" class="btn-primary">Agendar Hora →</a>
-                    <a href="servicios.html" class="btn-secondary">Ver Servicios</a>
+
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+
+                <!-- Contenido -->
+                <div class="max-w-3xl lg:w-1/1">
+                    <h1 class="text-5xl font-bold text-black mb-1">Clínica Consistorial</h1>
+                    <p class="text-1xl text-gray-600 mb-4">DERMATOLOGÍA</p>
+                    <p class="text-3xl text-gray-600 mb-4">
+                        Expertos en el cuidado de tu piel
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Atención dermatológica personalizada y cercana, con conocimientos médicos actualizados y
+                        experiencia clínica.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="agendar.html" class="btn-primary">
+                            Agendar Hora →
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Imagen -->
+                <div class="lg:w-1/2 flex justify-center">
+                    <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Imagen Clinica" alt="Dermatóloga"
+                        class="w-full max-w-md rounded-lg">
+                </div>
+
             </div>
+
         </div>
     </section>
 
 
     <!-- Services Overview -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-black mb-4">Nuestros Servicios</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    Ofrecemos atención especializada en dos áreas principales
-                </p>
+
+
+    <section class="py-20 bg-gray-50">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-black mb-4">Conoce Nuestros Servicios</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Abordamos todas las áreas de la dermatología con diagnósticos precisos y tratamientos actualizados.
+            </p>
+        </div>
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Tarjeta -->
+                <article class="border border-gray-200 bg-white shadow-sm hover:shadow-lg transition">
+
+                    <!-- Imagen -->
+                    <div class="relative h-64 bg-gray-300 overflow-hidden">
+                        <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Imagen Consulta Dermatológica"
+                            alt="Consulta Dermatológica" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Contenido -->
+                    <div class="p-8">
+                        <h4 class="text-3xl font-serif text-gray-800 mb-6">
+                            Consulta Dermatológica
+                        </h4>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            Diagnóstico, seguimiento y resolución de patologías
+                            cutáneas: acné, rosácea, dermatitis, psoriasis,
+                            lunares y manchas.
+                        </p>
+                        <a href="#" class="font-semibold uppercase tracking-wide text-gray-700 hover:text-black">
+                            Ver más →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="border border-gray-200 bg-white shadow-sm hover:shadow-lg transition">
+
+                    <!-- Imagen -->
+                    <div class="relative h-64 bg-gray-300 overflow-hidden">
+                        <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Imagen Cirugía Dermatológica"
+                            alt="Cirugía Dermatológica" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Contenido -->
+                    <div class="p-8">
+                        <h4 class="text-3xl font-serif text-gray-800 mb-6">
+                            Cirugía Dermatológica Ambulatoria
+                        </h4>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            Extirpación nevos (lunares), quistes, tumores benignos;
+                            biopsias, cáncer de piel.
+                        </p>
+                        <a href="#" class="font-semibold uppercase tracking-wide text-gray-700 hover:text-black">
+                            Ver más →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="border border-gray-200 bg-white shadow-sm hover:shadow-lg transition">
+
+                    <!-- Imagen -->
+                    <div class="relative h-64 bg-gray-300 overflow-hidden">
+                        <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Imagen Dermatología Estética"
+                            alt="Dermatología Estética" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Contenido -->
+                    <div class="p-8">
+                        <h4 class="text-3xl font-serif text-gray-800 mb-6">
+                            Dermatología Estética
+                        </h4>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            Tratamientos personalizados para mejorar la calidad de la
+                            piel, la luminosidad, corrección de manchas, textura y
+                            prevenición del envejecimiento cutáneo.
+                        </p>
+                        <a href="#" class="font-semibold uppercase tracking-wide text-gray-700 hover:text-black">
+                            Ver más →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="border border-gray-200 bg-white shadow-sm hover:shadow-lg transition">
+
+                    <!-- Imagen -->
+                    <div class="relative h-64 bg-gray-300 overflow-hidden">
+                        <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Imagen Tecnología Láser"
+                            alt="Tecnología Láser" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Contenido -->
+                    <div class="p-8">
+                        <h4 class="text-3xl font-serif text-gray-800 mb-6">
+                            Tecnología Láser
+                        </h4>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            Láser NEW HARMONY de última generación: unifica tono,
+                            rejuvenece y trata problemas vasculares como la rosácea.
+                        </p>
+                        <a href="#" class="font-semibold uppercase tracking-wide text-gray-700 hover:text-black">
+                            Ver más →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="border border-gray-200 bg-white shadow-sm hover:shadow-lg transition">
+
+                    <!-- Imagen -->
+                    <div class="relative h-64 bg-gray-300 overflow-hidden">
+                        <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Imagen Crioterapia" alt="Crioterapia"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <!-- Contenido -->
+                    <div class="p-8">
+                        <h4 class="text-3xl font-serif text-gray-800 mb-6">
+                            Crioterapia
+                        </h4>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            Tratamiento con congelación controlada para verrugas,
+                            manchas solares, queratosis y pequeños tumores
+                            benignos.
+                        </p>
+                        <a href="#" class="font-semibold uppercase tracking-wide text-gray-700 hover:text-black">
+                            Ver más →
+                        </a>
+                    </div>
+                </article>
+
+
+
+
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="card">
-                    <h3 class="text-2xl font-bold mb-4">Dermatología Clínica</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <span class="mr-2">•</span>
-                            <div>
-                                <p class="font-medium">Consulta Dermatológica General</p>
-                                <p class="text-sm text-gray-600">Diagnóstico, seguimiento y resolución de patologías
-                                    cutáneas como acné, rosácea, dermatitis, psoriasis y más.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="mr-2">•</span>
-                            <div>
-                                <p class="font-medium">Dermatoscopía Digital</p>
-                                <p class="text-sm text-gray-600">Seguimiento preventivo y detección precoz de lunares
-                                    con tecnología avanzada.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="mr-2">•</span>
-                            <div>
-                                <p class="font-medium">Cirugía Menor Ambulatoria</p>
-                                <p class="text-sm text-gray-600">Extirpación de quistes, verrugas, tumores benignos y
-                                    realización de biopsias.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3 class="text-2xl font-bold mb-4">Medicina Estética</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <span class="mr-2">•</span>
-                            <div>
-                                <p class="font-medium">Atenuación de líneas de expresión</p>
-                                <p class="text-sm text-gray-600">Toxina botulínica de precisión médica.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="mr-2">•</span>
-                            <div>
-                                <p class="font-medium">Restauración de volúmenes</p>
-                                <p class="text-sm text-gray-600">Ácido hialurónico y soporte facial.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="mr-2">•</span>
-                            <div>
-                                <p class="font-medium">Calidad de piel y bioestimulación</p>
-                                <p class="text-sm text-gray-600">Sculptra, Radiesse, peelings médicos.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="text-center mt-8">
-                <a href="servicios.html" class="btn-secondary">Ver Todos los Servicios →</a>
-            </div>
         </div>
     </section>
 
-    <!-- Why Trust Us Section -->
-    <section class="py-16 bg-white border-b border-gray-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-black mb-4">¿Por Qué Confiar en Nosotros?</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    Compromiso con la excelencia médica y el cuidado personalizado de cada paciente
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="card text-center">
-                    <div class="icon-box">🏆</div>
-                    <h3 class="text-lg font-bold mb-3">Especialistas Certificados</h3>
-                    <p class="text-sm text-gray-600">
-                        Dermatólogos acreditados con formación continua en técnicas avanzadas
-                    </p>
-                </div>
-
-                <div class="card text-center">
-                    <div class="icon-box">🔬</div>
-                    <h3 class="text-lg font-bold mb-3">Respaldo Científico</h3>
-                    <p class="text-sm text-gray-600">
-                        Tratamientos basados en evidencia médica y protocolos actualizados
-                    </p>
-                </div>
-
-                <div class="card text-center">
-                    <div class="icon-box">🛡️</div>
-                    <h3 class="text-lg font-bold mb-3">Seguridad y Confianza</h3>
-                    <p class="text-sm text-gray-600">
-                        Instalaciones certificadas y procedimientos seguros para tu tranquilidad
-                    </p>
-                </div>
-
-                <div class="card text-center">
-                    <div class="icon-box">💗</div>
-                    <h3 class="text-lg font-bold mb-3">Resultados Naturales</h3>
-                    <p class="text-sm text-gray-600">
-                        Sin expectativas falsas, respetando tu identidad y belleza natural
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
     <!-- Doctors Preview -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-black mb-4">Nuestro Equipo Médico</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    Especialistas acreditados con actualización académica continua
+
+    <section class="bg-[#f5f5f5] py-24">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+                <!-- Imagen -->
+                <div>
+                    <div class="bg-gray-200 rounded-2xl aspect-[4/3] flex items-center justify-center overflow-hidden">
+
+                        <!-- Placeholder -->
+                        <!-- Reemplaza por una imagen cuando la tengas -->
+                        <div class="text-center text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mx-auto mb-4" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M4 16l4-4 4 4 6-6 2 2v6H4z" />
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 8h.01" />
+                            </svg>
+
+                            <p class="text-2xl font-semibold">
+                                Foto: Instalaciones
+                            </p>
+                        </div>
+
+                        <!-- Cuando tengas la foto usa esto -->
+                        <!--
+                    <img
+                        src="img/clinica.jpg"
+                        alt="Instalaciones"
+                        class="w-full h-full object-cover">
+                    -->
+
+                    </div>
+                </div>
+
+                <!-- Texto -->
+                <div>
+
+                    <p class="uppercase tracking-wide font-bold text-gray-600 text-3xl mb-8">
+                        Nuestra Clínica
+                    </p>
+
+                    <h2 class="font-serif text-5xl text-gray-700 leading-tight mb-10">
+                        Una atención cercana,<br>
+                        con respaldo médico
+                    </h2>
+
+                    <p class="text-lg text-gray-600 leading-relaxed max-w-xl mb-12">
+                        En Clínica Consistorial estamos preparando un espacio dedicado al
+                        cuidado integral de la piel, con atención médica personalizada,
+                        tecnología de apoyo y un equipo dermatológico especializado.
+                    </p>
+
+                    <a href="equipo.html"
+                        class="inline-flex items-center justify-center bg-[#4a4a4a] hover:bg-black text-white font-semibold uppercase tracking-wide rounded-2xl px-10 py-5 transition">
+                        Conoce a nuestro equipo
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Encabezado -->
+            <div class="text-center mb-20">
+                <p class="uppercase tracking-widest text-sm font-semibold text-gray-600 mb-4">
+                    Por qué elegirnos
                 </p>
+
+                <h2 class="font-serif text-5xl text-gray-700">
+                    Nuestros Pilares
+                </h2>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="card">
-                    <div class="doctor-placeholder">👩‍⚕️</div>
-                    <h3 class="text-xl font-bold mb-2">Dra. Carolyn Rodríguez</h3>
-                    <p class="text-gray-600 font-medium mb-2">Dermatóloga</p>
-                    <p class="text-sm text-gray-500">Especializada en Medicina Estética Avanzada</p>
+            <!-- Pilares -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
+
+                <!-- Pilar -->
+                <div class="text-center">
+
+                    <div class="flex justify-center mb-8">
+                        <div class="w-14 h-14 rounded-xl border border-gray-300 flex items-center justify-center">
+                            <!-- Icono -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                                    d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-2xl text-gray-700 mb-5">
+                        Especialistas<br>Certificados
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Dermatólogos acreditados con formación continua en
+                        técnicas avanzadas.
+                    </p>
+
                 </div>
 
-                <div class="card">
-                    <div class="doctor-placeholder">👨‍⚕️</div>
-                    <h3 class="text-xl font-bold mb-2">Dr. Claudio Sotomayor</h3>
-                    <p class="text-gray-600 font-medium mb-2">Dermatólogo</p>
-                    <p class="text-sm text-gray-500">Especializado en Dermatología Clínica y Quirúrgica</p>
+                <!-- Pilar -->
+                <div class="text-center">
+
+                    <div class="flex justify-center mb-8">
+                        <div class="w-14 h-14 rounded-xl border border-gray-300 flex items-center justify-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                                    d="M9 12l2 2 4-4M12 2l8 4v6c0 5-4 8-8 10C8 20 4 17 4 12V6l8-4z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-2xl text-gray-700 mb-5">
+                        Respaldo Científico
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Tratamientos basados en evidencia médica y protocolos
+                        actualizados.
+                    </p>
+
                 </div>
+
+                <!-- Pilar -->
+                <div class="text-center">
+
+                    <div class="flex justify-center mb-8">
+                        <div class="w-14 h-14 rounded-xl border border-gray-300 flex items-center justify-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                                    d="M12 11V7m0 8h.01M5 21h14a2 2 0 002-2V9l-9-6-9 6v10a2 2 0 002 2z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-2xl text-gray-700 mb-5">
+                        Seguridad y Confianza
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Instalaciones certificadas y procedimientos seguros para
+                        tu tranquilidad.
+                    </p>
+
+                </div>
+
+                <!-- Pilar -->
+                <div class="text-center">
+
+                    <div class="flex justify-center mb-8">
+                        <div class="w-14 h-14 rounded-xl border border-gray-300 flex items-center justify-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-gray-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-2xl text-gray-700 mb-5">
+                        Resultados Naturales
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Sin expectativas falsas, respetando tu identidad y
+                        belleza natural.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="text-center mt-8">
-                <a href="equipo.html" class="btn-secondary">Conocer al Equipo →</a>
-            </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="py-16 bg-black text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="text-5xl mb-6">📅</div>
-            <h2 class="text-3xl font-bold mb-4">¿Listo para tu consulta?</h2>
+            <p class="text-gray-300 mb-1 max-w-2xl mx-auto">
+                AGENDA TU HORA
+            </p>
+            <h2 class="text-3xl font-bold mb-4">Tu piel merece una atención integral y especializada</h2>
             <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
-                Agenda tu hora de manera fácil y rápida a través de nuestro sistema Medilink
+                Escríbenos o agenda directamente y un miembro de nuestro equipo te contactará a la brevedad.
             </p>
             <a href="agendar.html" class="btn-primary-inverse">Agendar Hora Ahora →</a>
         </div>
@@ -259,7 +477,7 @@
             </div>
 
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-                <p>© 2025 Clínica Consistorial Dermatología. Todos los derechos reservados.</p>
+                <p>© 2026 Clínica Consistorial Dermatología. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

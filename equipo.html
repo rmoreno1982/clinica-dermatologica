@@ -7,6 +7,11 @@
     <title>Equipo Médico - Clínica</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="bg-white">
@@ -14,14 +19,17 @@
     <header class="border-b border-gray-300 bg-white sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial Dermatología</a>
+                <a href="index.html" class="text-xl font-bold text-black">Clínica Consistorial</a>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-black">Inicio</a>
                     <a href="servicios.html" class="text-sm font-medium text-gray-600 hover:text-black">Servicios</a>
-                    <a href="equipo.html" class="text-sm font-medium text-black border-b-2 border-black">Acerca de la
+                    <a href="equipo.html" class="text-sm font-medium text-black border-b-2 border-black">Equipo</a>
+                    <a href="clinica.html" class="text-sm font-medium text-gray-600 hover:text-black">Acerca de la
                         Clínica</a>
-                    <a href="agendar.html" class="text-sm font-medium text-gray-600 hover:text-black">Agendar Cita</a>
                     <a href="contacto.html" class="text-sm font-medium text-gray-600 hover:text-black">Contacto</a>
+
+                    <a href="https://www.softwaremedilink.com/" class="text-sm font-medium agenda">Agendar
+                        Cita</a>
                 </nav>
                 <button id="mobile-menu-btn" class="md:hidden p-2">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,17 +42,19 @@
                 <a href="index.html" class="block py-2 text-sm font-medium text-gray-600">Inicio</a>
                 <a href="servicios.html" class="block py-2 text-sm font-medium text-gray-600">Servicios</a>
                 <a href="equipo.html" class="block py-2 text-sm font-bold text-black ">Acerca de la Clínica</a>
-                <a href="agendar.html" class="block py-2 text-sm font-medium text-gray-600">Agendar Cita</a>
+                <a href="agendar.html" class="block py-2 text-sm font-medium text-gray-600">Clinica</a>
                 <a href="contacto.html" class="block py-2 text-sm font-medium text-gray-600">Contacto</a>
+                <a href="agendar.html" class="text-sm font-medium agenda">Agendar
+                    Cita</a>
             </div>
         </div>
     </header>
     <!-- Hero Section -->
     <section class="bg-gray-50 border-b border-gray-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
             <h1 class="text-4xl font-bold text-black mb-4">Nuestro Equipo Médico</h1>
-            <p class="text-xl text-gray-600 max-w-3xl">Profesionales especializados con amplia experiencia en
-                dermatología clínica y estética</p>
+            <p class="text-xl text-gray-600 mx-auto max-w-3xl">Dermatólogos certificados, con amplia trayectoria
+                clínica.</p>
         </div>
     </section>
     <!-- Breadcrumb -->
@@ -53,67 +63,239 @@
             <nav class="flex text-sm text-gray-600">
                 <a href="index.html" class="hover:text-black">Inicio</a>
                 <span class="mx-2">/</span>
-                <span class="text-black font-medium">Acerca de la Clínica</span>
+                <span class="text-black font-medium">Equipo</span>
             </nav>
         </div>
     </div>
-    <div class="py-16">
+    <div class="py-7">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-12 max-w-3xl mx-auto">
-                <p class="text-lg text-gray-700 leading-relaxed">En Clínica Consistorial, contamos con un equipo de
-                    profesionales de la salud altamente capacitados y con vasta experiencia en dermatología estética y
-                    clínica. Nuestro compromiso es brindarte atención integral, combinando tecnología de punta con un
-                    enfoque humanizado. Cada miembro de nuestro equipo se dedica a proporcionar tratamientos
-                    personalizados que respetan tu naturalidad y potencian tu bienestar.</p>
-            </div>
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-black mb-4">Nuestros Especialistas</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Expertos en dermatología clínica y estética</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-16">
-                <div class="card">
-                    <div class="doctor-placeholder">👩‍⚕️</div>
-                    <h2 class="text-2xl font-bold mb-2">Dra. Carolyn Rodríguez</h2>
-                    <p class="text-lg font-medium text-gray-700">Dermatóloga</p>
-                    <p class="text-md text-gray-600 mb-4">Especializada en Medicina Estética Avanzada</p>
-                    <div class="border-t-2 border-gray-300 pt-4 mt-4">
-                        <p class="text-gray-600">Especialista en rejuvenecimiento, bioestimulación y resultados
-                            naturales con respaldo científico.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="doctor-placeholder">👨‍⚕️</div>
-                    <h2 class="text-2xl font-bold mb-2">Dr. Claudio Sotomayor</h2>
-                    <p class="text-lg font-medium text-gray-700">Dermatólogo</p>
-                    <p class="text-md text-gray-600 mb-4">Especializado en Dermatología Clínica y Quirúrgica</p>
-                    <div class="border-t-2 border-gray-300 pt-4 mt-4">
-                        <p class="text-gray-600">Experto en diagnóstico y tratamiento de patologías cutáneas complejas.
+
+
+
+            <div class="">
+
+
+
+                <div class="grid lg:grid-cols-2 gap-16">
+
+
+
+                    <!-- ======================== -->
+                    <!-- Dra. Carolyn Rodríguez -->
+                    <!-- ======================== -->
+
+                    <article class="bg-white">
+
+                        <img src="https://placehold.co/400x600/E5E7EB/6B7280?text=Foto Dra. Carolyn Rodríguez"
+                            alt="Dra. Carolyn Rodríguez" class="w-full rounded-2xl aspect-[2/2] object-cover mb-8">
+
+                        <p class="uppercase tracking-widest text-sm font-semibold text-gray-600 mb-2">
+                            Médico Dermatólogo
                         </p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-gray-50 border-2 border-gray-300 p-8 mb-12">
-                <h3 class="text-2xl font-bold text-black mb-6 text-center">Nuestra Filosofía</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="border-l-4 border-black pl-4">
-                        <h4 class="font-bold text-lg mb-2">Ética médica</h4>
-                        <p class="text-gray-600">Tratamientos con respaldo científico. Sin falsas expectativas.</p>
-                    </div>
-                    <div class="border-l-4 border-black pl-4">
-                        <h4 class="font-bold text-lg mb-2">Naturalidad</h4>
-                        <p class="text-gray-600">Rejuvenecemos respetando tu identidad, evitando cambios artificiales.
+
+                        <h2 class="font-title text-5xl text-gray-700 mb-2">
+                            Dra. Carolyn Rodríguez
+                        </h2>
+
+                        <p class="text-xl text-gray-500 mb-8">
+                            Directora Médica Clínica Consistorial
                         </p>
-                    </div>
-                    <div class="border-l-4 border-black pl-4">
-                        <h4 class="font-bold text-lg mb-2">Excelencia</h4>
-                        <p class="text-gray-600">Especialistas acreditados en constante actualización académica.</p>
-                    </div>
+
+                        <!-- Formación -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Formación
+                            </h3>
+
+                            <ul class="space-y-2 text-gray-600">
+                                <li>Médico Cirujano, Universidad de Chile.</li>
+                                <li>Médico Dermatólogo, Universidad de Chile.</li>
+                                <li>Diplomado en Dermatoestética, Pontificia Universidad Católica de Chile.</li>
+                                <li>Diplomado en Terapia Lumínica y Láser en Dermatología, Universidad de Chile.
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Experiencia -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Experiencia
+                            </h3>
+
+                            <ul class="space-y-2 text-gray-600">
+                                <li>Hospital CRS Cordillera (2008 – actualidad).</li>
+                                <li>Clínica Universidad de Chile (2008 – actualidad).</li>
+                                <li>Clínica Las Condes (2017–2022).</li>
+                                <li>Clínica Orlandi (2021 – actualidad).</li>
+                                <li>Ex Directora Sociedad Chilena de Dermatología.</li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Docencia -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Docencia
+                            </h3>
+
+                            <p class="text-gray-600">
+                                Profesor Instructor Facultad de Medicina de la Universidad
+                                de Chile. Docencia de pregrado y postgrado en Dermatología.
+                            </p>
+
+                        </div>
+
+                        <!-- Membresías -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Membresías
+                            </h3>
+
+                            <ul class="space-y-2 text-gray-600">
+                                <li>Sociedad Chilena de Dermatología.</li>
+                                <li>Colegio Ibero-Latinoamericano de Dermatología (CILAD).</li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Áreas -->
+                        <div class="border-t border-gray-200 pt-6">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Áreas de interés
+                            </h3>
+
+                            <ul class="grid grid-cols-2 gap-y-2 text-gray-600">
+                                <li>Dermatología general</li>
+                                <li>Dermatología infantil</li>
+                                <li>Acné</li>
+                                <li>Rosácea</li>
+                                <li>Dermatitis</li>
+                                <li>Manchas</li>
+                                <li>Láser dermatológico</li>
+                                <li>Cirugía dermatológica</li>
+                                <li>Rejuvenecimiento facial</li>
+                                <li>Cáncer de piel</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ======================== -->
+                    <!-- Dr. Claudio Sotomayor -->
+                    <!-- ======================== -->
+
+                    <article class="bg-white">
+
+                        <img src="https://placehold.co/400x600/E5E7EB/6B7280?text=Foto Dr. Claudio Sotomayor Soto"
+                            alt="Dr. Claudio Sotomayor Soto" class="w-full rounded-2xl aspect-[2/2] object-cover mb-8">
+
+                        <p class="uppercase tracking-widest text-sm font-semibold text-gray-600 mb-2">
+                            Médico Dermatólogo
+                        </p>
+
+                        <h2 class="font-title text-5xl text-gray-700 mb-8">
+                            Dr. Claudio Sotomayor Soto
+                        </h2>
+
+                        <!-- Formación -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Formación
+                            </h3>
+
+                            <ul class="space-y-2 text-gray-600">
+                                <li>Médico Cirujano, Universidad de Chile.</li>
+                                <li>Médico Dermatólogo, Universidad de Chile.</li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Experiencia -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Experiencia
+                            </h3>
+
+                            <ul class="space-y-2 text-gray-600">
+                                <li>Hospital CRS Cordillera (2005–2025).</li>
+                                <li>Clínica Universidad de Chile (2005 – actualidad).</li>
+                                <li>Clínica Red Salud Vitacura (2005 – actualidad).</li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Docencia -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Docencia
+                            </h3>
+
+                            <p class="text-gray-600">
+                                Docencia de internos y becados de la Universidad de Chile.
+                                Participación en programas de pregrado y postgrado.
+                            </p>
+
+                        </div>
+
+                        <!-- Membresías -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Membresías
+                            </h3>
+
+                            <p class="text-gray-600">
+                                Sociedad Chilena de Dermatología.
+                            </p>
+
+                        </div>
+
+                        <!-- Áreas -->
+                        <div class="border-t border-gray-200 pt-6">
+
+                            <h3 class="uppercase text-sm font-semibold tracking-widest text-gray-700 mb-4">
+                                Áreas de interés
+                            </h3>
+
+                            <ul class="grid grid-cols-2 gap-y-2 text-gray-600">
+                                <li>Dermatología general</li>
+                                <li>Dermatología infantil</li>
+                                <li>Acné</li>
+                                <li>Rosácea</li>
+                                <li>Psoriasis</li>
+                                <li>Dermatitis</li>
+                                <li>Pelo y uñas</li>
+                                <li>Cirugía dermatológica</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
 
                 </div>
+
             </div>
-            <div class="text-center">
-                <h3 class="text-2xl font-bold mb-4">¿Listo para tu consulta?</h3><a href="agendar.html"
-                    class="btn-primary">Agendar Hora →</a>
+
+
+
+
+
+
+            <div class="text-center bg-black text-white p-8 my-4 text-center">
+                <h3 class="text-3xl font-bold mb-4">Un equipo de expertos en el cuidado de tu piel</h3>
+                <p class="text-gray-300 mb-6">Escríbenos o agenda directamente y un miembro de nuestro equipo te
+                    contactará a la brevedad.</p>
+                <a href="agendar.html" class="btn-outline bg-white text-black hover:bg-gray-200">Agendar Hora →</a>
             </div>
         </div>
     </div>
