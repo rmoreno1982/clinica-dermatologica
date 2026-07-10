@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clínica Consistorial — Dermatología</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'The Seasons';
+      src: url('assets/TheSeasons-Reg.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: 'The Seasons';
+      src: url('assets/TheSeasons-Lt.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: 'The Seasons';
+      src: url('assets/TheSeasons-Bd.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: 'The Seasons';
+      src: url('assets/TheSeasons-It.otf') format('opentype');
+      font-weight: 400;
+      font-style: italic
+    }
+
+    @font-face {
+      font-family: 'The Seasons';
+      src: url('assets/TheSeasons-LtIt.otf') format('opentype');
+      font-weight: 300;
+      font-style: italic
+    }
+
+    @font-face {
+      font-family: 'The Seasons';
+      src: url('assets/TheSeasons-BdIt.otf') format('opentype');
+      font-weight: 700;
+      font-style: italic
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Montserrat, sans-serif;
+      background: #F8F7F4;
+      color: #4B4F52;
+    }
+
+    a {
+      color: #B59652;
+      text-decoration: none;
+    }
+
+    .site-header {
+      padding: 22px 64px;
+      background: #faf5f1;
+      border-bottom: 1px solid rgba(181, 150, 82, .25);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      color: #4B4F52;
+      flex-wrap: wrap;
+      gap: 34px;
+      font-size: 13px;
+    }
+
+    .site-logo {
+      height: 60px;
+      width: auto;
+    }
+
+    .nav-link {
+      color: #4B4F52;
+      white-space: nowrap;
+      transition: color .25s;
+    }
+
+    .nav-link:hover {
+      color: #B59652;
+    }
+
+    .nav-link.active {
+      color: #B59652;
+      border-bottom: 1.5px solid #B59652;
+      padding-bottom: 7px;
+      padding-top: 8px;
+    }
+
+    .btn-agendar-header {
+      color: #FFFFFF;
+      padding: 11px 22px;
+      border-radius: 24px;
+      font-weight: 700;
+      background-color: #7E9A95;
+      display: inline-block;
+      transition: transform .25s, box-shadow .25s;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+
+    .btn-agendar-header:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(126, 154, 149, .45);
+    }
+
+    .hero {
+      background: #faf5f1;
+      background: #F8F7F4;
+      display: flex;
+      align-items: stretch;
+      min-height: 600px;
+    }
+
+    .hero-copy {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 0 60px 64px;
+    }
+
+    .hero-copy h1 {
+      font-family: 'The Seasons', serif;
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 1.08;
+      margin: 0 0 8px;
+      color: #3a3c3a;
+    }
+
+    .hero-tag {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 20px;
+    }
+
+    .hero-tag p {
+      font-family: Montserrat;
+      letter-spacing: .28em;
+      font-size: 12px;
+      color: #B59652;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .hero-sub {
+      font-family: 'The Seasons', serif;
+      font-size: 28px;
+      color: #6b6d6b;
+      margin: 0 0 22px;
+    }
+
+    .hero-desc {
+      font-size: 16px;
+      line-height: 1.75;
+      color: #7a7d7a;
+      max-width: 420px;
+      margin: 0 0 36px;
+    }
+
+    .btn-hero {
+      display: inline-block;
+      color: #F8F7F4;
+      padding: 17px 38px;
+      border-radius: 28px;
+      font-size: 14px;
+      font-weight: 600;
+      width: fit-content;
+      background-color: #7E9A95;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .btn-hero:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(126, 154, 149, .4);
+    }
+
+    .hero-triad {
+      margin-top: 30px;
+      font-size: 12px;
+      letter-spacing: .14em;
+      color: #8D9399;
+    }
+
+    .hero-img-wrap {
+      width: 50%;
+      position: relative;
+      overflow: hidden;
+      margin: 40px 56px 40px 24px;
+      border-radius: 25px;
+      box-shadow: 0 28px 64px rgba(58, 60, 58, .22);
+      height: 600px;
+    }
+
+    .hero-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: sepia(.16) saturate(1.08) brightness(1.03);
+    }
+
+    .services {
+      padding: 90px 64px;
+      background-color: #FFFFFF;
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-eyebrow {
+      font-size: 12px;
+      letter-spacing: .28em;
+      color: #B59652;
+      font-weight: 700;
+      margin: 0 0 14px;
+    }
+
+    .section-title {
+      font-family: 'The Seasons', serif;
+      font-size: 42px;
+      color: #3a3c3a;
+      margin: 0 0 18px;
+    }
+
+    .section-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      width: 180px;
+      margin: 0 auto;
+    }
+
+    .section-divider .line {
+      flex: 1;
+      height: 1px;
+      opacity: .6;
+      background-color: #B59652;
+    }
+
+    .section-divider img {
+      height: 32px;
+      width: auto;
+    }
+
+    .section-lead {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #7a7d7a;
+      max-width: 560px;
+      margin: 15px auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      max-width: 1312px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      position: relative;
+      height: 420px;
+      border-radius: 25px;
+      overflow: hidden;
+      transition: transform .35s, box-shadow .35s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 44px rgba(58, 60, 58, .28);
+    }
+
+    .service-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .5s;
+    }
+
+    .service-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .service-card .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #0F0C084E, #4B4F52E1, #7E9A95);
+    }
+
+    .service-card .content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 26px 24px;
+    }
+
+    .service-card h4 {
+      font-family: 'The Seasons', serif;
+      font-size: 25px;
+      color: #F8F7F4;
+      margin: 0 0 10px;
+    }
+
+    .service-card p {
+      font-size: 13px;
+      line-height: 1.55;
+      color: #e6e4df;
+      margin: 0 0 14px;
+    }
+
+    .vermas {
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      color: #F8F7F4;
+      border-bottom: 1px solid rgba(248, 247, 244, .6);
+      padding-bottom: 3px;
+      transition: letter-spacing .25s;
+    }
+
+    .vermas:hover {
+      letter-spacing: .18em;
+    }
+
+    .no-card {
+      border-radius: 18px;
+      padding: 36px 30px;
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 16px;
+      background-color: #4B4F52;
+      transition: transform .35s, box-shadow .35s;
+    }
+
+    .no-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 44px rgba(58, 60, 58, .28);
+    }
+
+    .no-card img {
+      height: 100px;
+      width: auto;
+    }
+
+    .no-card h4 {
+      font-family: 'The Seasons', serif;
+      font-size: 24px;
+      color: #F8F7F4;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .no-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #EFE9DF;
+      margin: 0;
+    }
+
+    .no-card a {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      color: #F8F7F4;
+      border-bottom: 1.5px solid #F8F7F4;
+      padding-bottom: 2px;
+      transition: letter-spacing .25s;
+    }
+
+    .no-card a:hover {
+      letter-spacing: .18em;
+    }
+
+    .clinic-preview {
+      padding: 100px 64px;
+      background-image: linear-gradient(rgba(248, 247, 244, .72), rgba(248, 247, 244, .90)), url('assets/trazado.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .clinic-preview-inner {
+      display: flex;
+      gap: 70px;
+      align-items: center;
+      max-width: 1312px;
+      margin: 0 auto;
+    }
+
+    .clinic-img-frame {
+      position: relative;
+      margin: 14px 0 14px 14px;
+      width: 600px;
+      flex-shrink: 0;
+    }
+
+    .corner {
+      position: absolute;
+      width: 26px;
+      height: 26px;
+    }
+
+    .corner.tl {
+      top: -14px;
+      left: -14px;
+      border-top: 2px solid #B59652;
+      border-left: 2px solid #B59652;
+    }
+
+    .corner.br {
+      bottom: -14px;
+      right: -14px;
+      border-bottom: 2px solid #B59652;
+      border-right: 2px solid #B59652;
+    }
+
+    .clinic-img-box {
+      width: 600px;
+      height: 360px;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #7E9A95;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .clinic-img-box img {
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
+      width: 150px;
+      margin: 20px 0;
+    }
+
+    .clinic-img-box p {
+      margin: 0;
+      color: #FFFFFFB1;
+    }
+
+    .clinic-copy p.eyebrow {
+      font-size: 12px;
+      letter-spacing: .28em;
+      color: #B59652;
+      font-weight: 700;
+      margin: 0 0 16px;
+    }
+
+    .clinic-copy h2 {
+      font-family: 'The Seasons', serif;
+      font-size: 38px;
+      line-height: 1.25;
+      color: #3a3c3a;
+      margin: 0 0 18px;
+    }
+
+    .clinic-copy .mini-divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 150px;
+      margin: 0 0 22px;
+    }
+
+    .clinic-copy .mini-divider div {
+      width: 32px;
+      height: 1px;
+      background: #B59652;
+      opacity: .7;
+    }
+
+    .clinic-copy .mini-divider img {
+      height: 26px;
+      width: auto;
+    }
+
+    .clinic-copy p.desc {
+      font-size: 15.5px;
+      line-height: 1.75;
+      color: #7a7d7a;
+      max-width: 440px;
+      margin: 0 0 32px;
+    }
+
+    .btn-dark {
+      display: inline-block;
+      background: #3a3c3a;
+      color: #F8F7F4;
+      padding: 15px 34px;
+      border-radius: 26px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .btn-dark:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(58, 60, 58, .35);
+    }
+
+    .pilares {
+      padding: 100px 64px;
+      background: #EFE9DF;
+    }
+
+    .pilares-grid {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      max-width: 1312px;
+      margin: 0 auto;
+    }
+
+    .pilares-dash {
+      position: absolute;
+      top: 32px;
+      left: 11%;
+      right: 11%;
+      height: 0;
+      border-top: 1.5px dashed #B59652;
+      opacity: .55;
+      z-index: 0;
+    }
+
+    .pilar {
+      text-align: center;
+      width: 22%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pilar-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 1.5px solid #B59652;
+      background: #EFE9DF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-family: 'The Seasons', serif;
+      font-size: 24px;
+      color: #B59652;
+      transition: transform .3s, background .3s, color .3s;
+    }
+
+    .pilar:hover .pilar-circle {
+      transform: scale(1.1);
+      background: #B59652;
+      color: #F8F7F4;
+    }
+
+    .pilar h3 {
+      font-family: 'The Seasons', serif;
+      font-size: 20px;
+      color: #3a3c3a;
+      margin: 0 0 12px;
+    }
+
+    .pilar p {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: #7a7d7a;
+      margin: 0;
+    }
+
+    .cta-final {
+      padding: 80px 64px;
+      background: #B59652;
+      text-align: center;
+      color: #2b2c2b;
+    }
+
+    .cta-final .eyebrow {
+      font-size: 12px;
+      letter-spacing: .28em;
+      margin: 0 auto;
+      opacity: .8;
+    }
+
+    .cta-final h2 {
+      font-family: 'The Seasons', serif;
+      font-size: 36px;
+      margin: 0 0 18px;
+    }
+
+    .cta-final p {
+      font-size: 15px;
+      max-width: 560px;
+      margin: 0 auto 34px;
+      opacity: .85;
+      line-height: 1.7;
+    }
+
+    .btn-cta-final {
+      display: inline-block;
+      background: #3a3c3a;
+      color: #F8F7F4;
+      padding: 17px 38px;
+      border-radius: 28px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .btn-cta-final:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(43, 44, 43, .4);
+    }
+
+    footer {
+      background: #2b2c2b;
+      color: #e7e5e0;
+      padding: 64px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 44px;
+      max-width: 1312px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-col {
+      flex: 1;
+    }
+
+    .footer-col .title {
+      font-family: Montserrat;
+      font-weight: 700;
+      letter-spacing: .08em;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .footer-col p {
+      font-size: 13px;
+      color: #a9a7a2;
+      margin: 4px 0;
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+
+    .social-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid #B59652;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .25s, transform .25s;
+    }
+
+    .social-icon:hover {
+      background: #B59652;
+      transform: translateY(-3px);
+    }
+
+    .footer-divider {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-bottom: 24px;
+      max-width: 1312px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-divider .line {
+      flex: 1;
+      height: 1px;
+      background: #B59652;
+      opacity: .55;
+    }
+
+    .footer-divider img {
+      height: 26px;
+      width: auto;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: #8b8983;
+      text-align: center;
+    }
+
+    @media (max-width:1100px) {
+      .site-header {
+        padding: 18px 24px;
+      }
+
+      .site-nav {
+        gap: 16px;
+        font-size: 11.5px;
+      }
+
+      .site-logo {
+        height: 44px !important;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-copy,
+      .hero-img-wrap {
+        width: 100%;
+      }
+
+      .hero-copy {
+        padding: 48px 24px 24px;
+      }
+
+      .hero-img-wrap {
+        margin: 0 24px 40px;
+        height: 360px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .clinic-preview-inner {
+        flex-direction: column;
+      }
+
+      .clinic-img-frame,
+      .clinic-img-box {
+        width: 100%;
+      }
+
+      .pilares-grid {
+        flex-direction: column;
+      }
+
+      .pilar {
+        width: 100%;
+      }
+
+      .pilares-dash {
+        display: none;
+      }
+
+      .footer-top {
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <img class="site-logo" src="assets/logo.png" alt="Clínica Consistorial">
+      <nav class="site-nav">
+        <a href="#" class="nav-link active">Inicio</a>
+        <a href="#" class="nav-link">Servicios</a>
+        <a href="#" class="nav-link">Equipo</a>
+        <a href="#" class="nav-link">Acerca de la Clínica</a>
+        <a href="#" class="nav-link">Contacto</a>
+
+      </nav>
+      <a href="#" class="btn-agendar-header">Agendar Hora</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Clínica Consistorial</h1>
+        <div class="hero-tag">
+          <div style="width:15px;height:1px;background:#B59652"></div>
+          <p>DERMATOLOGÍA</p>
+        </div>
+        <p class="hero-sub">Expertos en el cuidado de tu piel</p>
+        <p class="hero-desc">Atención dermatológica personalizada y cercana, con conocimientos médicos actualizados y
+          experiencia clínica.</p>
+        <a href="#" class="btn-hero">Agendar Hora →</a>
+        <div style="margin-top:34px;width:50px;height:1px;background:#B59652"></div>
+        <p class="hero-triad">CIENCIA · BIENESTAR · CONFIANZA</p>
+      </div>
+      <div class="hero-img-wrap">
+        <img src="assets/foto-clinica.jpg" alt="Recepción Clínica Consistorial">
+        <div
+          style="position:absolute;inset:0;background:linear-gradient(120deg,rgba(250,245,241,.28) 0%,rgba(250,245,241,0) 18%,rgba(250,245,241,0) 82%,rgba(250,245,241,.28) 100%)">
+        </div>
+        <div style="position:absolute;inset:18px;border:1px solid rgba(181,150,82,.65);pointer-events:none"></div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services">
+      <div class="section-head">
+        <p class="section-eyebrow">NUESTROS TRATAMIENTOS</p>
+        <h2 class="section-title">Conoce Nuestros Servicios</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <img src="assets/isopng.png" alt="">
+          <div class="line"></div>
+        </div>
+        <p class="section-lead">Abordamos todas las áreas de la dermatología con diagnósticos precisos y tratamientos
+          actualizados.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=75&auto=format&fit=crop"
+            alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h4>Consulta Dermatológica</h4>
+            <p>Diagnóstico, seguimiento y resolución de patologías cutáneas: acné, rosácea, dermatitis, psoriasis,
+              lunares y manchas.</p>
+            <a href="#" class="vermas">VER MÁS →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="assets/1.webp" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h4>Cirugía Dermatológica Ambulatoria</h4>
+            <p>Extirpación de nevos, quistes y tumores benignos; biopsias, cáncer de piel.</p>
+            <a href="#" class="vermas">VER MÁS →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="assets/3.webp" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h4>Dermatología Estética</h4>
+            <p>Tratamientos personalizados para mejorar la luminosidad, textura y prevenir el envejecimiento cutáneo.
+            </p>
+            <a href="#" class="vermas">VER MÁS →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="assets/laser.webp" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h4>Tecnología Láser</h4>
+            <p>Láser NEW HARMONY de última generación: unifica el tono, rejuvenece y trata problemas vasculares como la
+              rosácea.</p>
+            <a href="#" class="vermas">VER MÁS →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="assets/c.webp" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h4>Crioterapia</h4>
+            <p>Tratamiento con congelación controlada para verrugas, manchas solares, queratosis y pequeños tumores
+              benignos.</p>
+            <a href="#" class="vermas">VER MÁS →</a>
+          </div>
+        </div>
+        <div class="no-card">
+          <img src="assets/iso-blanco.png" alt="">
+          <h4>¿No encuentras<br>tu tratamiento?</h4>
+          <p>Escríbenos y te orientamos sobre la opción más adecuada para tu piel.</p>
+          <a href="#">CONTÁCTANOS →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clinica preview -->
+    <section class="clinic-preview">
+      <div class="clinic-preview-inner">
+        <div class="clinic-img-frame">
+          <span class="corner tl"></span>
+          <span class="corner br"></span>
+          <div class="clinic-img-box">
+            <img src="assets/iso-blanco.png" alt="isopng">
+            <p>Ciencia · Bienestar · Confianza</p>
+          </div>
+        </div>
+        <div class="clinic-copy">
+          <p class="eyebrow">NUESTRA CLÍNICA</p>
+          <h2>Una atención cercana,<br>con respaldo médico</h2>
+          <div class="mini-divider">
+            <div></div>
+            <img src="assets/isopng.png" alt="">
+            <div></div>
+          </div>
+          <p class="desc">En Clínica Consistorial preparamos un espacio dedicado al cuidado integral de la piel, con
+            atención médica personalizada y un equipo dermatológico especializado.</p>
+          <a href="#" class="btn-dark">Conoce a Nuestro Equipo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilares -->
+    <section class="pilares">
+      <div class="section-head">
+        <p class="section-eyebrow">POR QUÉ ELEGIRNOS</p>
+        <h2 class="section-title">Nuestros Pilares</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <img src="assets/isopng.png" alt="">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="pilares-grid">
+        <div class="pilares-dash"></div>
+        <div class="pilar">
+          <div class="pilar-circle">01</div>
+          <h3>Especialistas Certificados</h3>
+          <p>Dermatólogos acreditados con formación continua.</p>
+        </div>
+        <div class="pilar">
+          <div class="pilar-circle">02</div>
+          <h3>Respaldo Científico</h3>
+          <p>Tratamientos basados en evidencia médica.</p>
+        </div>
+        <div class="pilar">
+          <div class="pilar-circle">03</div>
+          <h3>Seguridad y Confianza</h3>
+          <p>Instalaciones certificadas y procedimientos seguros.</p>
+        </div>
+        <div class="pilar">
+          <div class="pilar-circle">04</div>
+          <h3>Resultados Naturales</h3>
+          <p>Respetando tu identidad y belleza natural.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-final">
+      <p class="eyebrow">AGENDA TU HORA</p>
+      <h2>Tu piel merece una atención integral y especializada</h2>
+      <p>Escríbenos o agenda directamente y un miembro de nuestro equipo te contactará a la brevedad.</p>
+      <a href="#" class="btn-cta-final">Agendar Hora Ahora →</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="title">CLÍNICA CONSISTORIAL DERMATOLOGÍA</div>
+          <p>Cuidado y Belleza de la Piel</p>
+        </div>
+        <div class="footer-col">
+          <div class="title" style="font-family:Montserrat">Contacto</div>
+          <p>Av. Consistorial 5791, Peñalolén</p>
+          <p>+56 9 XXXX XXXX</p>
+        </div>
+        <div class="footer-col">
+          <div class="title" style="font-family:Montserrat">Horarios</div>
+          <p>Lun–Vie 9:00–18:00</p>
+          <p>Sáb 9:00–13:00</p>
+        </div>
+      </div>
+      <div class="footer-social">
+        <span class="social-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#B59652"
+            stroke-width="1.6">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.3" cy="6.7" r="1" fill="#B59652" stroke="none"></circle>
+          </svg></span>
+        <span class="social-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B59652"
+            stroke-width="1.6">
+            <path d="M15 8h-2a2 2 0 00-2 2v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5c0-.6.3-1 1-1h1.5z"></path>
+          </svg></span>
+        <span class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B59652"
+            stroke-width="1.6">
+            <path d="M20 12a8 8 0 10-14.5 4.6L4 21l4.6-1.4A8 8 0 0020 12z"></path>
+            <path d="M9 10.5c0 3 2.5 5.5 5.5 5.5" stroke-linecap="round"></path>
+          </svg></span>
+      </div>
+      <div class="footer-divider">
+        <div class="line"></div>
+        <img src="assets/isopng.png" alt="">
+        <div class="line"></div>
+      </div>
+      <div class="footer-copy">© 2026 Clínica Consistorial Dermatología</div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
