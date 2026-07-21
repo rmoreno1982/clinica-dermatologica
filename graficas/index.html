@@ -6,503 +6,482 @@
 <title>Clínica Consistorial Dermatología</title>
 <meta name="description" content="Atención dermatológica personalizada y cercana, con conocimientos médicos actualizados y experiencia clínica de excelencia." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          display: ['"Playfair Display"', 'Georgia', 'serif'],
-          sans: ['Raleway', 'system-ui', 'sans-serif'],
-        },
-        colors: {
-          gold: { DEFAULT: '#C4A252', light: '#D4BA78', dark: '#A88840', pale: '#F2EAD8' },
-          cream: { DEFAULT: '#FAFAF6', warm: '#F5F0E6' },
-          charcoal: { DEFAULT: '#1A1816', mid: '#2C2825' },
-          muted: '#8A847C',
-        },
-      },
-    },
-  }
-</script>
-<style>
-  html { scroll-behavior: smooth; }
-  body {
-    background-color: #FAFAF6;
-    color: #2C2825;
-    font-family: 'Raleway', system-ui, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  ::-webkit-scrollbar { width: 5px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: rgba(196, 162, 82, 0.25); border-radius: 3px; }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
-  .pilares {
-      padding: 100px 64px;
-      background: #EFE9DF;
-    }
-
-    .pilares-grid {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      max-width: 1312px;
-      margin: 0 auto;
-    }
-
-    .pilares-dash {
-      position: absolute;
-      top: 32px;
-      left: 11%;
-      right: 11%;
-      height: 0;
-      border-top: 1.5px dashed #B59652;
-      opacity: .55;
-      z-index: 0;
-    }
-
-    .pilar {
-      text-align: center;
-      width: 22%;
-      position: relative;
-      z-index: 1;
-    }
-
-    .pilar-circle {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      border: 1.5px solid #B59652;
-      background: #EFE9DF;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      font-family: 'The Seasons', serif;
-      font-size: 24px;
-      color: #B59652;
-      transition: transform .3s, background .3s, color .3s;
-    }
-
-    .pilar:hover .pilar-circle {
-      transform: scale(1.1);
-      background: #B59652;
-      color: #F8F7F4;
-    }
-
-    .pilar h3 {
-      font-family: 'The Seasons', serif;
-      font-size: 20px;
-      color: #3a3c3a;
-      margin: 0 0 12px;
-    }
-
-    .pilar p {
-      font-size: 13.5px;
-      line-height: 1.6;
-      color: #7a7d7a;
-      margin: 0;
-    }
-</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="estilos.css" />
 </head>
 <body class="overflow-x-hidden">
 
 <!-- ============ NAVBAR ============ -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-[#FAFAF6]/95 backdrop-blur-sm border-b border-[#C4A252]/15">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-    <img src="assets/logo.png" alt="Clínica Consistorial Dermatología" class="h-14 w-auto object-contain" />
+<header class="fixed-top cd-header">
+  <div class="d-flex align-items-center justify-content-between mx-auto cd-header-inner">
+    <img src="assets/logo.svg" alt="Clínica Consistorial Dermatología" class="object-fit-contain cd-logo" />
 
-    <nav class="hidden lg:flex items-center gap-7">
-      <a href="#" class="text-[12.5px] font-[500] tracking-wide text-[#2C2825] hover:text-[#C4A252] transition-colors duration-200">Inicio</a>
-      <a href="#servicios" class="text-[12.5px] font-[500] tracking-wide text-[#2C2825] hover:text-[#C4A252] transition-colors duration-200">Servicios</a>
-      <a href="#" class="text-[12.5px] font-[500] tracking-wide text-[#2C2825] hover:text-[#C4A252] transition-colors duration-200">Equipo</a>
-      <a href="#nosotros" class="text-[12.5px] font-[500] tracking-wide text-[#2C2825] hover:text-[#C4A252] transition-colors duration-200">Acerca de la Clínica</a>
-      <a href="#contacto" class="text-[12.5px] font-[500] tracking-wide text-[#2C2825] hover:text-[#C4A252] transition-colors duration-200">Contacto</a>
+    <nav class="cd-nav">
+      <a href="#" class="cd-nav-link on">Inicio</a>
+      <a href="#servicios" class="cd-nav-link">Servicios</a>
+      <a href="#" class="cd-nav-link">Equipo</a>
+      <a href="#nosotros" class="cd-nav-link">Acerca de la Clínica</a>
+      <a href="#contacto" class="cd-nav-link">Contacto</a>
     </nav>
 
-    <button class="hidden lg:flex items-center px-6 py-2.5 border border-[#C4A252] text-[#C4A252] text-[11px] font-[600] tracking-[0.14em] uppercase hover:bg-[#C4A252] hover:text-white transition-all duration-300 cursor-pointer rounded-[20px]">
+    <button class="text-uppercase cd-btn-outline-gold">
       Agendar Cita
     </button>
 
-    <button id="menuBtn" class="lg:hidden flex flex-col gap-1.5 cursor-pointer">
-      <span class="w-6 h-px bg-[#2C2825] block"></span>
-      <span class="w-6 h-px bg-[#2C2825] block"></span>
-      <span class="w-4 h-px bg-[#2C2825] block"></span>
+    <button id="menuBtn" class="flex-column cd-menu-btn">
+      <span class="cd-menu-bar"></span>
+      <span class="cd-menu-bar"></span>
+      <span class="cd-menu-bar cd-menu-bar-sm"></span>
     </button>
   </div>
 
-  <div id="mobileMenu" class="hidden lg:hidden bg-[#FAFAF6] border-t border-[#C4A252]/10 px-6 py-6 flex flex-col gap-5">
-    <a href="#" class="text-[13px] font-[500] text-[#2C2825] hover:text-[#C4A252] transition-colors">Inicio</a>
-    <a href="#servicios" class="text-[13px] font-[500] text-[#2C2825] hover:text-[#C4A252] transition-colors">Servicios</a>
-    <a href="#" class="text-[13px] font-[500] text-[#2C2825] hover:text-[#C4A252] transition-colors">Equipo</a>
-    <a href="#nosotros" class="text-[13px] font-[500] text-[#2C2825] hover:text-[#C4A252] transition-colors">Acerca de la Clínica</a>
-    <a href="#contacto" class="text-[13px] font-[500] text-[#2C2825] hover:text-[#C4A252] transition-colors">Contacto</a>
-    <button class="self-start px-6 py-2.5 border border-[#C4A252] text-[#C4A252] text-[11px] font-[600] tracking-[0.14em] uppercase">
+  <div id="mobileMenu" class="cd-mobile-menu">
+    <a href="#" class="cd-mobile-link on">Inicio</a>
+    <a href="#servicios" class="cd-mobile-link">Servicios</a>
+    <a href="#" class="cd-mobile-link">Equipo</a>
+    <a href="#nosotros" class="cd-mobile-link">Acerca de la Clínica</a>
+    <a href="#contacto" class="cd-mobile-link">Contacto</a>
+    <button class="text-uppercase cd-mobile-btn">
       Agendar Cita
     </button>
   </div>
 </header>
 
 <!-- ============ HERO ============ -->
-<section class="pt-20 min-h-screen grid grid-cols-1 lg:grid-cols-2">
-  <div class="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-20 bg-[#FAFAF6]">
-    
+<section class="cd-hero">
+  <div class="d-flex flex-column justify-content-center cd-hero-text">
 
-    <h1 class="font-display text-5xl xl:text-[3.8rem] leading-[1.08] text-[#1A1816] mb-6">
-      Expertos en el<br />cuidado de tu piel
+    <h1 class="font-display mb-4 cd-hero-title">
+      Expertos en el<br /><em>cuidado de tu piel</em>
     </h1>
 
-    <div class="h-px w-14 bg-[#C4A252] mb-7"></div>
+    <div class="cd-hero-divider"></div>
 
-    <p class="text-[15px] font-[400] leading-[1.8] text-[#8A847C] max-w-sm mb-10">
+    <p class="cd-hero-desc">
       Atención dermatológica personalizada y cercana, con conocimientos
       médicos actualizados y experiencia clínica de excelencia.
     </p>
 
-    <div class="flex items-center gap-5">
-      <button class="group flex items-center gap-3 px-8 py-4 bg-[#C4A252] text-white text-[11px] font-[700] tracking-[0.15em] uppercase hover:bg-[#A88840] transition-colors duration-300 cursor-pointer rounded-[20px]">
+    <div class="d-flex align-items-center cd-hero-btn-row">
+      <button class="d-flex align-items-center text-uppercase cd-btn-gold">
         Agendar Hora
-        <span class="group-hover:translate-x-1 transition-transform duration-200 text-base leading-none">→</span>
+        <span class="cd-arrow">→</span>
       </button>
     </div>
 
-    
-    <p class="text-[12px] font-[400] leading-[1.8] text-[#8A847C] max-w-sm mt-4">
+    <p class="cd-hero-tagline">
       Ciencia · Bienestar · Confianza
     </p>
   </div>
 
-  <div class="relative bg-[#F5F0E6] overflow-hidden min-h-[60vh] lg:min-h-0">
-    <img src="assets/hero.jpg" alt="Tratamiento dermatológico de excelencia" class="w-full h-full object-cover" />
-    <div class="absolute top-8 left-8 w-16 h-16 border-l border-t border-[#C4A252]/70 pointer-events-none"></div>
-    <div class="absolute bottom-8 right-8 w-16 h-16 border-r border-b border-[#C4A252]/70 pointer-events-none"></div>
-    <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#1A1816]/20 to-transparent pointer-events-none"></div>
+  <div class="position-relative overflow-hidden cd-hero-image-wrap">
+    <img src="assets/hero.jpg" alt="Tratamiento dermatológico de excelencia" class="w-100 h-100 object-fit-cover" />
+    
+    <div class="position-absolute bottom-0 start-0 end-0 cd-hero-fade"></div>
   </div>
 </section>
 
 <!-- ============ SERVICIOS ============ -->
-<section id="servicios" class="py-24 bg-[#FAFAF6]">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10">
-    <div class="text-center mb-16">
-      <div class="flex items-center justify-center gap-4 mb-5">
-        <div class="h-px w-12 bg-[#C4A252]/50"></div>
-        <span class="text-[11px] font-[600] tracking-[0.2em] text-[#C4A252] uppercase">Especialidades</span>
-        <div class="h-px w-12 bg-[#C4A252]/50"></div>
-      </div>
-      <h2 class="font-display text-4xl lg:text-5xl font-[600] text-[#1A1816] mb-4">Conoce Nuestros Servicios</h2>
-      <p class="text-[14.5px] text-[#8A847C] max-w-lg mx-auto leading-relaxed">
+
+<section id="servicios" class="cd-section-servicios">
+  <div class="mx-auto cd-container">
+    <div class="text-center cd-section-header">
+      <h2 class="font-display text-center cd-section-title mb-3">Conoce Nuestros Servicios</h2>
+      <p class="cd-section-desc">
         Abarcamos todos los áreas de la dermatología con diagnósticos precisos y tratamientos actualizados.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-      <!-- Card 1 -->
-      <div class="group bg-white rounded-[20px] overflow-hidden border border-[#E8E2D8] hover:border-[#C4A252]/40 hover:shadow-lg transition-all duration-400 flex flex-col">
-        <div class="relative overflow-hidden h-52 bg-[#F5F0E6]">
-          <img src="https://images.unsplash.com/photo-1688588162416-f7a7e726e0bf?w=600&h=380&fit=crop&auto=format" alt="Consulta dermatológica con especialista" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-          <div class="absolute bottom-0 left-0 right-0 h-px bg-[#C4A252]/50"></div>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="assets/lunar.jpg"
+          alt="">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Consulta Dermatológica</h4>
+          <p>Diagnóstico, seguimiento y resolución de patologías cutáneas: acné, rosácea, dermatitis, psoriasis,
+            lunares y manchas.</p>
+          <a href="#" class="vermas">VER MÁS →</a>
         </div>
-        <div class="p-6 flex flex-col flex-1">
-          <h3 class="font-display text-[1.15rem] font-[600] text-[#1A1816] mb-3 leading-snug">Consulta Dermatológica</h3>
-          <p class="text-[13.5px] leading-[1.75] text-[#8A847C] font-[400] flex-1 mb-5">
-            Diagnóstico, seguimiento y atención de patologías como acné, rosácea, dermatitis, psoriasis, tumores y manchas cutáneas.
+      </div>
+      <div class="service-card">
+        <img src="assets/1.webp" alt="">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Cirugía Dermatológica Ambulatoria</h4>
+          <p>Extirpación de nevos, quistes y tumores benignos; biopsias, cáncer de piel.</p>
+          <a href="#" class="vermas">VER MÁS →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="assets/botox.jpg" alt="">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Dermatología Estética</h4>
+          <p>Tratamientos personalizados para mejorar la luminosidad, textura y prevenir el envejecimiento cutáneo.
           </p>
-          <a href="#" class="flex items-center gap-2 text-[11px] font-[700] tracking-[0.15em] uppercase text-[#C4A252] hover:gap-3 transition-all duration-200">
-            Ver más <span class="text-base leading-none">→</span>
-          </a>
+          <a href="#" class="vermas">VER MÁS →</a>
         </div>
       </div>
-      <!-- Card 2 -->
-      <div class="group bg-white rounded-[20px] overflow-hidden border border-[#E8E2D8] hover:border-[#C4A252]/40 hover:shadow-lg transition-all duration-400 flex flex-col">
-        <div class="relative overflow-hidden h-52 bg-[#F5F0E6]">
-          <img src="https://images.unsplash.com/photo-1713085085470-fba013d67e65?w=600&h=380&fit=crop&auto=format" alt="Procedimiento de cirugía dermatológica ambulatoria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-          <div class="absolute bottom-0 left-0 right-0 h-px bg-[#C4A252]/50"></div>
-        </div>
-        <div class="p-6 flex flex-col flex-1">
-          <h3 class="font-display text-[1.15rem] font-[600] text-[#1A1816] mb-3 leading-snug">Cirugía Dermatológica Ambulatoria</h3>
-          <p class="text-[13.5px] leading-[1.75] text-[#8A847C] font-[400] flex-1 mb-5">
-            Extirpación de nevus, fibromas, quistes, tumores benignos, lipomas, cáncer de piel y corrección de cicatrices.
-          </p>
-          <a href="#" class="flex items-center gap-2 text-[11px] font-[700] tracking-[0.15em] uppercase text-[#C4A252] hover:gap-3 transition-all duration-200">
-            Ver más <span class="text-base leading-none">→</span>
-          </a>
+      <div class="service-card">
+        <img src="assets/laser.jpg" alt="">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Tecnología Láser</h4>
+          <p>Láser NEW HARMONY de última generación: unifica el tono, rejuvenece y trata problemas vasculares como la
+            rosácea.</p>
+          <a href="#" class="vermas">VER MÁS →</a>
         </div>
       </div>
-      <!-- Card 3 -->
-      <div class="group bg-white rounded-[20px] overflow-hidden border border-[#E8E2D8] hover:border-[#C4A252]/40 hover:shadow-lg transition-all duration-400 flex flex-col">
-        <div class="relative overflow-hidden h-52 bg-[#F5F0E6]">
-          <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&h=380&fit=crop&auto=format" alt="Tratamiento de dermatología estética" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-          <div class="absolute bottom-0 left-0 right-0 h-px bg-[#C4A252]/50"></div>
-        </div>
-        <div class="p-6 flex flex-col flex-1">
-          <h3 class="font-display text-[1.15rem] font-[600] text-[#1A1816] mb-3 leading-snug">Dermatología Estética</h3>
-          <p class="text-[13.5px] leading-[1.75] text-[#8A847C] font-[400] flex-1 mb-5">
-            Tratamientos personalizados para el cuidado de la piel, corrección de manchas, arrugas y prevención del envejecimiento cutáneo.
-          </p>
-          <a href="#" class="flex items-center gap-2 text-[11px] font-[700] tracking-[0.15em] uppercase text-[#C4A252] hover:gap-3 transition-all duration-200">
-            Ver más <span class="text-base leading-none">→</span>
-          </a>
+      <div class="service-card">
+        <img src="assets/c.webp" alt="">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Crioterapia</h4>
+          <p>Tratamiento con congelación controlada para verrugas, manchas solares, queratosis y pequeños tumores
+            benignos.</p>
+          <a href="#" class="vermas">VER MÁS →</a>
         </div>
       </div>
-    </div>
-
-    <div class="flex flex-col md:flex-row justify-center gap-6">
-      <!-- Card 4 -->
-      <div class="w-full md:w-[calc(33.333%-12px)]">
-        <div class="group bg-white rounded-[20px] overflow-hidden border border-[#E8E2D8] hover:border-[#C4A252]/40 hover:shadow-lg transition-all duration-400 flex flex-col h-full">
-          <div class="relative overflow-hidden h-52 bg-[#F5F0E6]">
-            <img src="https://images.unsplash.com/photo-1700760933941-3a06a28fbf47?w=600&h=380&fit=crop&auto=format" alt="Tratamiento con tecnología láser avanzada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-            <div class="absolute bottom-0 left-0 right-0 h-px bg-[#C4A252]/50"></div>
-          </div>
-          <div class="p-6 flex flex-col flex-1">
-            <h3 class="font-display text-[1.15rem] font-[600] text-[#1A1816] mb-3 leading-snug">Tecnología Láser</h3>
-            <p class="text-[13.5px] leading-[1.75] text-[#8A847C] font-[400] flex-1 mb-5">
-              Laser HIFU HARMONY para tratar manchas, cicatrices, arrugas, rosácea y otros problemas cutáneos con resultados precisos.
-            </p>
-            <a href="#" class="flex items-center gap-2 text-[11px] font-[700] tracking-[0.15em] uppercase text-[#C4A252] hover:gap-3 transition-all duration-200">
-              Ver más <span class="text-base leading-none">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 5 -->
-      <div class="w-full md:w-[calc(33.333%-12px)]">
-        <div class="group bg-white rounded-[20px] overflow-hidden border border-[#E8E2D8] hover:border-[#C4A252]/40 hover:shadow-lg transition-all duration-400 flex flex-col h-full">
-          <div class="relative overflow-hidden h-52 bg-[#F5F0E6]">
-            <img src="https://images.unsplash.com/photo-1761718209835-c8586b7dcac0?w=600&h=380&fit=crop&auto=format" alt="Tratamiento de crioterapia dermatológica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-            <div class="absolute bottom-0 left-0 right-0 h-px bg-[#C4A252]/50"></div>
-          </div>
-          <div class="p-6 flex flex-col flex-1">
-            <h3 class="font-display text-[1.15rem] font-[600] text-[#1A1816] mb-3 leading-snug">Crioterapia</h3>
-            <p class="text-[13.5px] leading-[1.75] text-[#8A847C] font-[400] flex-1 mb-5">
-              Tratamiento con congelación controlada para queratosis, verrugas, fibromas y pequeños tumores benignos de la piel.
-            </p>
-            <a href="#" class="flex items-center gap-2 text-[11px] font-[700] tracking-[0.15em] uppercase text-[#C4A252] hover:gap-3 transition-all duration-200">
-              Ver más <span class="text-base leading-none">→</span>
-            </a>
-          </div>
-        </div>
+      <div class="no-card">
+        <img src="assets/iso-blanco.png" alt="">
+        <h4>¿No encuentras<br>tu tratamiento?</h4>
+        <p>Escríbenos y te orientamos sobre la opción más adecuada para tu piel.</p>
+        <a href="#">CONTÁCTANOS →</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ ACERCA DE LA CLÍNICA ============ -->
-<section id="nosotros" class="py-0 bg-[#F5F0E6]">
-  <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
-    <div class="relative overflow-hidden bg-[#E8E0D0] min-h-[400px] lg:min-h-0">
-      <img src="https://images.unsplash.com/photo-1759262151080-e05ba1c6294f?w=800&h=700&fit=crop&auto=format" alt="Interior de la Clínica Consistorial" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-[#1A1816]/10 pointer-events-none"></div>
-      <div class="absolute top-8 left-8 w-20 h-20 border-l border-t border-[#C4A252]/60 pointer-events-none"></div>
+<section id="nosotros" class="cd-about-section">
+  <div class="cd-about-grid">
+    <div class="position-relative overflow-hidden cd-about-image-wrap">
+      <div class="cd-gallery">
+        <img src="https://images.unsplash.com/photo-1759262151080-e05ba1c6294f?w=800&h=700&fit=crop&auto=format" alt="Interior de la Clínica Consistorial" class="cd-gallery-img is-active" />
+        <img src="assets/foto-clinica.jpg" alt="Recepción de la Clínica Consistorial" class="cd-gallery-img" />
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=700&fit=crop&auto=format" alt="Sala de atención de la Clínica Consistorial" class="cd-gallery-img" />
+      </div>
+      <div class="position-absolute top-0 start-0 end-0 bottom-0 cd-about-overlay"></div>
+
+      <button type="button" id="galleryPrev" class="cd-gallery-btn cd-gallery-prev" aria-label="Imagen anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button type="button" id="galleryNext" class="cd-gallery-btn cd-gallery-next" aria-label="Siguiente imagen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
     </div>
 
-    <div class="flex flex-col justify-center px-8 lg:px-16 xl:px-20 py-20">
-      <div class="flex items-center gap-3 mb-6">
-        <div class="h-px w-10 bg-[#C4A252]"></div>
-        <span class="text-[11px] font-[600] tracking-[0.2em] text-[#C4A252] uppercase">Nuestra Clínica</span>
+    <div class="d-flex flex-column justify-content-center cd-about-content">
+      <div class="d-flex align-items-center cd-eyebrow-row">
+       
+        <span class="cd-eyebrow-text">Nuestra Clínica</span>
       </div>
 
-      <h2 class="font-display text-4xl xl:text-5xl font-[600] text-[#1A1816] leading-[1.1] mb-6">
+      <h2 class="font-display cd-about-title">
         Una atención cercana,<br /><em>con respaldo médico</em>
       </h2>
 
-      <div class="h-px w-14 bg-[#C4A252] mb-7"></div>
+      <div class="cd-about-divider"></div>
 
-      <p class="text-[15px] font-[400] leading-[1.85] text-[#6A6560] max-w-md mb-4">
+      <p class="cd-about-p1">
         En Clínica Consistorial disponemos de un espacio dedicado al cuidado integral de la piel, con atención médica personalizada, tecnología de apoyo y procedimientos dermatológicos especializados.
       </p>
 
-      <p class="text-[14px] font-[400] leading-[1.8] text-[#8A847C] max-w-md mb-10">
+      <p class="cd-about-p2">
         Nuestro compromiso es que cada paciente reciba una atención de excelencia en un ambiente cálido y de confianza.
       </p>
 
-      <button class="self-start group flex items-center gap-3 px-7 py-3.5 border border-[#1A1816] text-[#1A1816] text-[11px] font-[700] tracking-[0.15em] uppercase hover:bg-[#1A1816] hover:text-white transition-all duration-300 cursor-pointer rounded-[20px]">
-        Conoce a Nuestro Equipo
-        <span class="group-hover:translate-x-1 transition-transform duration-200">→</span>
-      </button>
+      
     </div>
   </div>
 </section>
 
 <!-- ============ PILARES ============ -->
-<section class="py-24 bg-[#FAFAF6]">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10">
-    <div class="text-center mb-16">
-      <p class="text-[11px] font-[600] tracking-[0.22em] text-[#C4A252] uppercase mb-4">Por qué elegirnos</p>
-      <h2 class="font-display text-4xl lg:text-5xl font-[600] text-[#1A1816]">Nuestros Pilares</h2>
+<section class="cd-section-pilares">
+  <div class="mx-auto cd-container">
+    <div class="text-center cd-section-header">
+      <p class="cd-section-eyebrow">Por qué elegirnos</p>
+      <h2 class="font-display cd-section-title">Nuestros Pilares</h2>
     </div>
 
     <div class="pilares-grid">
-        <div class="pilares-dash"></div>
-        <div class="pilar">
-          <div class="pilar-circle">01</div>
-          <h3>Especialistas Certificados</h3>
-          <p>Dermatólogos acreditados con formación continua.</p>
-        </div>
-        <div class="pilar">
-          <div class="pilar-circle">02</div>
-          <h3>Respaldo Científico</h3>
-          <p>Tratamientos basados en evidencia médica.</p>
-        </div>
-        <div class="pilar">
-          <div class="pilar-circle">03</div>
-          <h3>Seguridad y Confianza</h3>
-          <p>Instalaciones certificadas y procedimientos seguros.</p>
-        </div>
-        <div class="pilar">
-          <div class="pilar-circle">04</div>
-          <h3>Resultados Naturales</h3>
-          <p>Respetando tu identidad y belleza natural.</p>
-        </div>
+      <div class="pilares-dash"></div>
+      <div class="pilar">
+        <div class="pilar-circle">01</div>
+        <h3>Especialistas Certificados</h3>
+        <p>Dermatólogos acreditados con formación continua.</p>
       </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
-      <div class="p-8 flex flex-col items-center text-center group lg:border-r sm:border-r border-[#E8E2D8]">
-        <div class="h-px w-12 bg-[#C4A252] mb-8 group-hover:w-20 transition-all duration-400"></div>
-        <div class="text-[#C4A252] mb-6 opacity-90">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" class="w-10 h-10">
-            <rect x="10" y="14" width="28" height="24" rx="2" />
-            <path d="M10 22h28M17 14V10M31 14V10" stroke-linecap="round" />
-            <path d="M16 30l4 4 8-8" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </div>
-        <h3 class="font-display text-[1.1rem] font-[600] text-[#1A1816] mb-3 leading-snug">Especialistas Certificados</h3>
-        <p class="text-[13px] leading-[1.8] text-[#8A847C] font-[400]">
-          Dermatólogos acreditados con formación en los mejores centros nacionales e internacionales de la especialidad.
-        </p>
+      <div class="pilar">
+        <div class="pilar-circle">02</div>
+        <h3>Respaldo Científico</h3>
+        <p>Tratamientos basados en evidencia médica.</p>
       </div>
-
-      <div class="p-8 flex flex-col items-center text-center group lg:border-r border-[#E8E2D8]">
-        <div class="h-px w-12 bg-[#C4A252] mb-8 group-hover:w-20 transition-all duration-400"></div>
-        <div class="text-[#C4A252] mb-6 opacity-90">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" class="w-10 h-10">
-            <circle cx="24" cy="24" r="14" />
-            <circle cx="24" cy="24" r="5" />
-            <path d="M24 6v4M24 38v4M6 24h4M38 24h4" stroke-linecap="round" />
-          </svg>
-        </div>
-        <h3 class="font-display text-[1.1rem] font-[600] text-[#1A1816] mb-3 leading-snug">Respaldo Científico</h3>
-        <p class="text-[13px] leading-[1.8] text-[#8A847C] font-[400]">
-          Tratamientos basados en evidencia médica y protocolos clínicos actualizados con la literatura científica vigente.
-        </p>
+      <div class="pilar">
+        <div class="pilar-circle">03</div>
+        <h3>Seguridad y Confianza</h3>
+        <p>Instalaciones certificadas y procedimientos seguros.</p>
       </div>
-
-      <div class="p-8 flex flex-col items-center text-center group lg:border-r border-[#E8E2D8]">
-        <div class="h-px w-12 bg-[#C4A252] mb-8 group-hover:w-20 transition-all duration-400"></div>
-        <div class="text-[#C4A252] mb-6 opacity-90">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" class="w-10 h-10">
-            <path d="M24 8l12 5v10c0 8-6 14-12 16C18 37 12 31 12 23V13l12-5z" />
-            <path d="M18 24l4 4 8-8" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </div>
-        <h3 class="font-display text-[1.1rem] font-[600] text-[#1A1816] mb-3 leading-snug">Seguridad y Confianza</h3>
-        <p class="text-[13px] leading-[1.8] text-[#8A847C] font-[400]">
-          Instalaciones certificadas y procedimientos seguros para que cada tratamiento sea realizado con total tranquilidad.
-        </p>
-      </div>
-
-      <div class="p-8 flex flex-col items-center text-center group">
-        <div class="h-px w-12 bg-[#C4A252] mb-8 group-hover:w-20 transition-all duration-400"></div>
-        <div class="text-[#C4A252] mb-6 opacity-90">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" class="w-10 h-10">
-            <path d="M24 12c-6 0-12 4-12 10 0 4 3 7 6 9l6 7 6-7c3-2 6-5 6-9 0-6-6-10-12-10z" />
-            <path d="M20 22c0-2 1.8-4 4-4s4 2 4 4" stroke-linecap="round" />
-          </svg>
-        </div>
-        <h3 class="font-display text-[1.1rem] font-[600] text-[#1A1816] mb-3 leading-snug">Resultados Naturales</h3>
-        <p class="text-[13px] leading-[1.8] text-[#8A847C] font-[400]">
-          Se esperan favorecer resultados que realzan la identidad y estética natural de cada paciente de manera armoniosa.
-        </p>
+      <div class="pilar">
+        <div class="pilar-circle">04</div>
+        <h3>Resultados Naturales</h3>
+        <p>Respetando tu identidad y belleza natural.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ CTA ============ -->
-<section class="relative py-28 bg-[#1A1816] overflow-hidden">
-  <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C4A252]/40 to-transparent"></div>
-  <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C4A252]/40 to-transparent"></div>
+<section class="position-relative overflow-hidden cd-cta-section">
+  <div class="position-absolute top-0 start-0 end-0 cd-cta-line"></div>
+  <div class="position-absolute bottom-0 start-0 end-0 cd-cta-line"></div>
 
-  <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, #C4A252 1px, transparent 1px); background-size: 32px 32px;"></div>
+  <div class="position-absolute top-0 start-0 end-0 bottom-0 cd-cta-dots"></div>
 
-  <div class="absolute top-10 left-10 w-20 h-20 border-l border-t border-[#C4A252]/20"></div>
-  <div class="absolute bottom-10 right-10 w-20 h-20 border-r border-b border-[#C4A252]/20"></div>
+  <div class="position-absolute cd-cta-corner cd-cta-corner-tl"></div>
+  <div class="position-absolute cd-cta-corner cd-cta-corner-br"></div>
 
-  <div class="relative max-w-4xl mx-auto px-6 text-center">
-    <div class="flex items-center justify-center gap-4 mb-7">
-      <div class="h-px w-12 bg-[#C4A252]/60"></div>
-      <span class="text-[11px] font-[600] tracking-[0.22em] text-[#C4A252] uppercase">Agenda tu Hora</span>
-      <div class="h-px w-12 bg-[#C4A252]/60"></div>
+  <div class="position-relative mx-auto text-center px-4 cd-cta-inner">
+    <div class="d-flex align-items-center justify-content-center cd-cta-eyebrow-row">
+      
+      <span class="cd-cta-eyebrow-text">Agenda tu Hora</span>
+      
     </div>
 
-    <h2 class="font-display text-4xl lg:text-5xl xl:text-[3.4rem] font-[600] text-white leading-[1.12] mb-6">
+    <h2 class="font-display text-white cd-cta-title">
       Tu piel merece una atención<br /><em>integral y especializada</em>
     </h2>
 
-    <div class="h-px w-14 bg-[#C4A252] mx-auto mb-7"></div>
+    <div class="cd-cta-divider"></div>
 
-    <p class="text-[15px] font-[400] leading-relaxed text-white/50 max-w-lg mx-auto mb-12">
+    <p class="cd-cta-desc">
       Te invitamos a agendar tu hora y descubrir todo lo que la dermatología especializada puede hacer por ti. La primera consulta es el primer paso.
     </p>
 
-    <button class="group inline-flex items-center gap-3 px-10 py-4 bg-[#C4A252] text-white text-[11px] font-[700] tracking-[0.15em] uppercase hover:bg-[#D4BA78] transition-colors duration-300 cursor-pointer rounded-[20px]">
+    <button class="d-inline-flex align-items-center text-uppercase cd-btn-gold-lg">
       Agendar Hora Ahora
-      <span class="group-hover:translate-x-1 transition-transform duration-200 text-base leading-none">→</span>
+      <span class="cd-arrow">→</span>
     </button>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
-<footer id="contacto" class="bg-[#141210] border-t border-[#C4A252]/15">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
-      <div class="lg:col-span-1">
-        <div class="mb-5">
-          <p class="font-display text-[1.3rem] font-[600] text-[#C4A252] leading-tight tracking-wide">Clínica Consistorial</p>
-          <p class="text-[10px] font-[600] tracking-[0.3em] text-[#C4A252]/60 uppercase mt-1">Dermatología</p>
+
+<section class="instagram-feed">
+
+    <div class="mx-auto cd-container">
+
+        <div class="instagram-title">
+
+            <span class="cd-cta-eyebrow-text">Instagram</span>
+            <h2 class="font-display cd-section-title">@clinicadermatologica</h2>
+
         </div>
-        <div class="h-px w-10 bg-[#C4A252]/40 mb-5"></div>
-        <p class="text-[13px] font-[400] leading-[1.8] text-white/35">
-          Expertos en el cuidado y la salud de tu piel, con atención personalizada y respaldo médico de excelencia.
-        </p>
+
+        <!-- Historias -->
+
+        <div class="stories">
+
+            <div class="story">
+                <img src="https://placehold.co/120x120" alt="">
+                <span>Antes y después</span>
+            </div>
+
+            <div class="story">
+                <img src="https://placehold.co/120x120" alt="">
+                <span>Tratamientos</span>
+            </div>
+
+            <div class="story">
+                <img src="https://placehold.co/120x120" alt="">
+                <span>Equipo</span>
+            </div>
+
+        </div>
+
+        <!-- Feed -->
+
+        <div class="feed">
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <img src="https://placehold.co/60x60" alt="">
+
+                    <div>
+                        <strong>clinica.dermatologica</strong>
+                        <small>Viña del Mar</small>
+                    </div>
+
+                    <span>•••</span>
+
+                </div>
+
+                <img class="post-image" src="https://placehold.co/600x600" alt="">
+
+                <div class="post-actions">
+
+                    <span>♡</span>
+                    <span>💬</span>
+                    <span>✈</span>
+
+                </div>
+
+                <div class="post-info">
+
+                    <strong>245 Me gusta</strong>
+
+                    <p>
+                        <strong>clinica.dermatologica</strong>
+                        Una piel saludable comienza con una evaluación profesional.
+                    </p>
+
+                    <small>Ver los 18 comentarios</small>
+
+                </div>
+
+            </article>
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <img src="https://placehold.co/60x60" alt="">
+
+                    <div>
+                        <strong>clinica.dermatologica</strong>
+                        <small>Consulta</small>
+                    </div>
+
+                    <span>•••</span>
+
+                </div>
+
+                <img class="post-image" src="https://placehold.co/600x600" alt="">
+
+                <div class="post-actions">
+
+                    <span>♡</span>
+                    <span>💬</span>
+                    <span>✈</span>
+
+                </div>
+
+                <div class="post-info">
+
+                    <strong>321 Me gusta</strong>
+
+                    <p>
+                        <strong>clinica.dermatologica</strong>
+                        Agenda tu evaluación dermatológica con nuestros especialistas.
+                    </p>
+
+                    <small>Ver los 25 comentarios</small>
+
+                </div>
+
+            </article>
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <img src="https://placehold.co/60x60" alt="">
+
+                    <div>
+                        <strong>clinica.dermatologica</strong>
+                        <small>Dermatología</small>
+                    </div>
+
+                    <span>•••</span>
+
+                </div>
+
+                <img class="post-image" src="https://placehold.co/600x600" alt="">
+
+                <div class="post-actions">
+
+                    <span>♡</span>
+                    <span>💬</span>
+                    <span>✈</span>
+
+                </div>
+
+                <div class="post-info">
+
+                    <strong>198 Me gusta</strong>
+
+                    <p>
+                        <strong>clinica.dermatologica</strong>
+                        Consejos diarios para proteger tu piel durante todo el año.
+                    </p>
+
+                    <small>Ver los 11 comentarios</small>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer id="contacto" class="cd-footer">
+  <div class="mx-auto cd-footer-inner">
+    <div class="row g-5">
+      <div class="col-12 col-lg-3">
+        <div class="cd-footer-brand-block">
+          <p class="font-display cd-footer-brand-name">Clínica Consistorial</p>
+          <p class="cd-footer-brand-sub">Dermatología</p>
+        </div>
+        
       </div>
 
-      <div>
-        <h4 class="text-[11px] font-[700] tracking-[0.18em] uppercase text-[#C4A252]/80 mb-5">Clínica</h4>
-        <ul class="space-y-3">
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">Inicio</a></li>
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">Conoce la Clínica</a></li>
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">Nuestro Equipo</a></li>
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">Trabaja con Nosotros</a></li>
+      <div class="col-12 col-lg-3">
+        <h4 class="cd-footer-heading">Clínica</h4>
+        <ul class="cd-footer-list">
+          <li><a href="#" class="cd-footer-link">Inicio</a></li>
+          <li><a href="#" class="cd-footer-link">Conoce la Clínica</a></li>
+          <li><a href="#" class="cd-footer-link">Nuestro Equipo</a></li>
         </ul>
       </div>
 
-      <div>
-        <h4 class="text-[11px] font-[700] tracking-[0.18em] uppercase text-[#C4A252]/80 mb-5">Contacto</h4>
-        <ul class="space-y-3">
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">+56 (XX) XXX-XXXX</a></li>
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">info@clinicaconsistorial.cl</a></li>
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">Dirección Clínica</a></li>
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">Agendar en línea</a></li>
-        </ul>
+      <div class="col-12 col-lg-3">
+        <h4 class="cd-footer-heading">Contacto</h4>
+        <p>Av. Consistorial 5791, Peñalolén</p>
+        <p>+56 9 XXXX XXXX</p>
       </div>
 
-      <div>
-        <h4 class="text-[11px] font-[700] tracking-[0.18em] uppercase text-[#C4A252]/80 mb-5">Horarios</h4>
-        <ul class="space-y-3">
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">Lunes a Viernes</a></li>
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">09:00 – 18:30</a></li>
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">Sábado</a></li>
-          <li><a href="#" class="text-[13px] font-[400] text-white/40 hover:text-[#C4A252]/80 transition-colors duration-200">09:00 – 13:00</a></li>
-        </ul>
+      <div class="col-12 col-lg-3">
+        <h4 class="cd-footer-heading">Horarios</h4>
+        <p>Lun–Vie 9:00–18:00</p>
+        <p>Sáb: Flexible</p>
       </div>
     </div>
 
-    <div class="mt-14 pt-[10px] border-t border-white/8 flex flex-col items-center gap-3" style="border-color: #4d4125;">
-      <p class="text-[12px] text-white/25 font-[400] text-center">
+    <div class="footer-social">
+        <span class="social-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#B59652" stroke-width="1.6">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.3" cy="6.7" r="1" fill="#B59652" stroke="none"></circle>
+          </svg></span>
+        <span class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B59652" stroke-width="1.6">
+            <path d="M15 8h-2a2 2 0 00-2 2v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5c0-.6.3-1 1-1h1.5z"></path>
+          </svg></span>
+        <span class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B59652" stroke-width="1.6">
+            <path d="M20 12a8 8 0 10-14.5 4.6L4 21l4.6-1.4A8 8 0 0020 12z"></path>
+            <path d="M9 10.5c0 3 2.5 5.5 5.5 5.5" stroke-linecap="round"></path>
+          </svg></span>
+      </div>
+
+    <div class="d-flex flex-column align-items-center cd-footer-bottom">
+      <p class="cd-footer-copy">
         © 2026 Clínica Consistorial Dermatología. Todos los derechos reservados.
       </p>
     </div>
@@ -513,7 +492,21 @@
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
   menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('is-open');
+  });
+
+  const galleryImgs = document.querySelectorAll('.cd-gallery-img');
+  let gallerySlide = 0;
+  function showGallerySlide(index) {
+    galleryImgs.forEach((img, i) => img.classList.toggle('is-active', i === index));
+  }
+  document.getElementById('galleryNext').addEventListener('click', () => {
+    gallerySlide = (gallerySlide + 1) % galleryImgs.length;
+    showGallerySlide(gallerySlide);
+  });
+  document.getElementById('galleryPrev').addEventListener('click', () => {
+    gallerySlide = (gallerySlide - 1 + galleryImgs.length) % galleryImgs.length;
+    showGallerySlide(gallerySlide);
   });
 </script>
 
