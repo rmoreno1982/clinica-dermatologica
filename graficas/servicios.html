@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Servicios - Clínica Consistorial Dermatología</title>
+<meta name="description" content="Conoce nuestros servicios dermatológicos: consulta, cirugía ambulatoria, dermatología estética, tecnología láser y crioterapia." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="estilos.css" />
+</head>
+<body class="overflow-x-hidden">
+
+<!-- ============ NAVBAR ============ -->
+<header class="fixed-top cd-header">
+  <div class="d-flex align-items-center justify-content-between mx-auto cd-header-inner">
+    <img src="assets/logo.svg" alt="Clínica Consistorial Dermatología" class="object-fit-contain cd-logo" />
+
+    <nav class="cd-nav">
+      <a href="index.html" class="cd-nav-link">Inicio</a>
+      <a href="servicios.html" class="cd-nav-link on">Servicios</a>
+      <a href="equipo.html" class="cd-nav-link">Equipo</a>
+      <a href="clinica.html" class="cd-nav-link">Acerca de la Clínica</a>
+      <a href="contacto.html" class="cd-nav-link">Contacto</a>
+    </nav>
+
+    <button class="text-uppercase cd-btn-outline-gold">
+      Agendar Cita
+    </button>
+
+    <button id="menuBtn" class="flex-column cd-menu-btn">
+      <span class="cd-menu-bar"></span>
+      <span class="cd-menu-bar"></span>
+      <span class="cd-menu-bar cd-menu-bar-sm"></span>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="cd-mobile-menu">
+    <a href="index.html" class="cd-mobile-link">Inicio</a>
+    <a href="servicios.html" class="cd-mobile-link on">Servicios</a>
+    <a href="equipo.html" class="cd-mobile-link">Equipo</a>
+    <a href="clinica.html" class="cd-mobile-link">Acerca de la Clínica</a>
+    <a href="contacto.html" class="cd-mobile-link">Contacto</a>
+    <button class="text-uppercase cd-mobile-btn">
+      Agendar Cita
+    </button>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="cd-page-hero">
+  <div class="mx-auto cd-container cd-page-hero-inner">
+    <div class="cd-breadcrumb">
+      <a href="index.html">Inicio</a>
+      <span class="sep">—</span>
+      <span class="current">Servicios</span>
+    </div>
+
+    <div class="cd-page-hero-row">
+      <div>
+       
+        <h1 class="font-display cd-page-title">Nuestros Servicios</h1>
+        <p class="cd-page-lead">Dermatología integral en cada etapa de tu vida.</p>
+      </div>
+      <div class="cd-page-hero-corner"></div>
+    </div>
+  </div>
+  <div class="cd-page-hero-line"></div>
+</section>
+
+<!-- ============ DETALLE DE SERVICIOS ============ -->
+<section style="background:#FAFAF6;">
+
+  <div id="consulta" class="cd-service-detail">
+    <div class="cd-service-media">
+      <img src="assets/lunar.jpg" alt="Consulta dermatológica" class="w-100 h-100 object-fit-cover">
+    </div>
+    <div class="cd-service-body">
+      <div class="cd-service-num-row">
+        <span class="cd-service-num">01</span>
+        <div class="cd-service-num-line"></div>
+      </div>
+      <div class="cd-service-eyebrow-row">
+       
+        <span class="cd-service-eyebrow">Examen físico · Diagnóstico y seguimiento</span>
+      </div>
+      <h2 class="cd-service-title">Consulta Dermatológica</h2>
+      <p class="cd-service-desc">Evaluación clínica completa y seguimiento de enfermedades de la piel, con diagnósticos precisos y planes de tratamiento personalizados.</p>
+      <ul class="cd-service-list">
+        <li><span class="dot"></span><span class="txt">Acné y rosácea</span></li>
+        <li><span class="dot"></span><span class="txt">Dermatitis y psoriasis</span></li>
+        <li><span class="dot"></span><span class="txt">Evaluación de lunares y lesiones</span></li>
+        <li><span class="dot"></span><span class="txt">Lesiones malignas</span></li>
+        <li><span class="dot"></span><span class="txt">Manchas y alteraciones del pigmento</span></li>
+        <li><span class="dot"></span><span class="txt">Patologías del pelo y las uñas</span></li>
+      </ul>
+      <a href="contacto.html" class="cd-btn-outline-gold-static">Agendar Consulta <span class="cd-arrow">→</span></a>
+    </div>
+  </div>
+
+  <div id="cirugia" class="cd-service-detail">
+    <div class="cd-service-body">
+      <div class="cd-service-num-row">
+        <span class="cd-service-num">02</span>
+        <div class="cd-service-num-line"></div>
+      </div>
+      <div class="cd-service-eyebrow-row">
+        
+        <span class="cd-service-eyebrow">Procedimientos seguros · Instalaciones certificadas</span>
+      </div>
+      <h2 class="cd-service-title">Cirugía Dermatológica Ambulatoria</h2>
+      <p class="cd-service-desc">Procedimientos quirúrgicos menores realizados en un ambiente seguro y certificado, con anestesia local y recuperación inmediata.</p>
+      <ul class="cd-service-list">
+        <li><span class="dot"></span><span class="txt">Biopsias de piel</span></li>
+        <li><span class="dot"></span><span class="txt">Extirpación de lunares y nevus</span></li>
+        <li><span class="dot"></span><span class="txt">Quistes y tumores benignos</span></li>
+        <li><span class="dot"></span><span class="txt">Tumores malignos cutáneos</span></li>
+        <li><span class="dot"></span><span class="txt">Crioterapia</span></li>
+      </ul>
+      <a href="contacto.html" class="cd-btn-outline-gold-static">Agendar Consulta <span class="cd-arrow">→</span></a>
+    </div>
+    <div class="cd-service-media">
+      <img src="assets/1.webp" alt="Cirugía dermatológica ambulatoria" class="w-100 h-100 object-fit-cover">
+    </div>
+  </div>
+
+  <div id="estetica" class="cd-service-detail">
+    <div class="cd-service-media">
+      <img src="assets/botox.jpg" alt="Dermatología estética" class="w-100 h-100 object-fit-cover">
+    </div>
+    <div class="cd-service-body">
+      <div class="cd-service-num-row">
+        <span class="cd-service-num">03</span>
+        <div class="cd-service-num-line"></div>
+      </div>
+      <div class="cd-service-eyebrow-row">
+        
+        <span class="cd-service-eyebrow">Tratamientos personalizados · Resultados naturales</span>
+      </div>
+      <h2 class="cd-service-title">Dermatología Estética</h2>
+      <p class="cd-service-desc">Procedimientos estéticos médicos diseñados para mejorar la apariencia y salud de la piel, respetando la identidad y belleza natural de cada paciente.</p>
+      <ul class="cd-service-list">
+        <li><span class="dot"></span><span class="txt">Rejuvenecimiento facial</span></li>
+        <li><span class="dot"></span><span class="txt">Mejora de luminosidad y calidad de la piel</span></li>
+        <li><span class="dot"></span><span class="txt">Corrección de manchas y pigmentaciones</span></li>
+        <li><span class="dot"></span><span class="txt">Tratamiento de cicatrices de acné</span></li>
+      </ul>
+      <a href="contacto.html" class="cd-btn-outline-gold-static">Agendar Consulta <span class="cd-arrow">→</span></a>
+    </div>
+  </div>
+
+  <div id="laser" class="cd-service-detail">
+    <div class="cd-service-body">
+      <div class="cd-service-num-row">
+        <span class="cd-service-num">04</span>
+        <div class="cd-service-num-line"></div>
+      </div>
+      <div class="cd-service-eyebrow-row">
+        
+        <span class="cd-service-eyebrow">Laser New Harmony · Precisión y resultados</span>
+      </div>
+      <h2 class="cd-service-title">Tecnología Láser</h2>
+      <p class="cd-service-desc">Sistema LASER NEW HARMONY de última generación para el tratamiento no invasivo de múltiples condiciones cutáneas con resultados visibles y duraderos.</p>
+      <ul class="cd-service-list">
+        <li><span class="dot"></span><span class="txt">Unificación del tono de la piel</span></li>
+        <li><span class="dot"></span><span class="txt">Rejuvenecimiento facial</span></li>
+        <li><span class="dot"></span><span class="txt">Manchas, estrías y cicatrices</span></li>
+        <li><span class="dot"></span><span class="txt">Rosácea y telangiectasias faciales</span></li>
+      </ul>
+      <a href="contacto.html" class="cd-btn-outline-gold-static">Agendar Consulta <span class="cd-arrow">→</span></a>
+    </div>
+    <div class="cd-service-media">
+      <img src="assets/laser.jpg" alt="Tecnología láser" class="w-100 h-100 object-fit-cover">
+    </div>
+  </div>
+
+  <div id="crioterapia" class="cd-service-detail">
+    <div class="cd-service-media">
+      <img src="assets/c.webp" alt="Crioterapia" class="w-100 h-100 object-fit-cover">
+    </div>
+    <div class="cd-service-body">
+      <div class="cd-service-num-row">
+        <span class="cd-service-num">05</span>
+        <div class="cd-service-num-line"></div>
+      </div>
+      <div class="cd-service-eyebrow-row">
+        
+        <span class="cd-service-eyebrow">Tratamiento con congelación · Sin cirugía</span>
+      </div>
+      <h2 class="cd-service-title">Crioterapia</h2>
+      <p class="cd-service-desc">Técnica de congelación controlada con nitrógeno líquido para la eliminación eficaz y precisa de lesiones cutáneas benignas sin necesidad de cirugía.</p>
+      <ul class="cd-service-list">
+        <li><span class="dot"></span><span class="txt">Verrugas víricas</span></li>
+        <li><span class="dot"></span><span class="txt">Léntigos solares</span></li>
+        <li><span class="dot"></span><span class="txt">Queratosis seborreicas</span></li>
+        <li><span class="dot"></span><span class="txt">Pequeños tumores benignos</span></li>
+      </ul>
+      <a href="contacto.html" class="cd-btn-outline-gold-static">Agendar Consulta <span class="cd-arrow">→</span></a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="position-relative overflow-hidden cd-cta-section">
+  <div class="position-absolute top-0 start-0 end-0 cd-cta-line"></div>
+  <div class="position-absolute bottom-0 start-0 end-0 cd-cta-line"></div>
+
+  <div class="position-absolute top-0 start-0 end-0 bottom-0 cd-cta-dots"></div>
+
+  <div class="position-absolute cd-cta-corner cd-cta-corner-tl"></div>
+  <div class="position-absolute cd-cta-corner cd-cta-corner-br"></div>
+
+  <div class="position-relative mx-auto text-center px-4 cd-cta-inner">
+    <div class="d-flex align-items-center justify-content-center cd-cta-eyebrow-row">
+      
+      <span class="cd-cta-eyebrow-text">¿Tienes alguna duda sobre que tratamiento necesitas?</span>
+      
+    </div>
+
+    <h2 class="font-display text-white cd-cta-title">
+      Conversemos sobre <em>tu piel</em>
+    </h2>
+
+    <div class="cd-cta-divider"></div>
+
+    <p class="cd-cta-desc">
+      Agenda una hora de consulta y te orientaremos sobre el tratamiento más adecuado para ti.
+    </p>
+
+    <a href="contacto.html" class="d-inline-flex align-items-center text-uppercase text-decoration-none cd-btn-gold-lg">
+      Agendar Consulta
+      <span class="cd-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="cd-footer">
+  <div class="mx-auto cd-footer-inner">
+    <div class="row g-5">
+      <div class="col-12 col-lg-3">
+        <div class="cd-footer-brand-block">
+          <p class="font-display cd-footer-brand-name">Clínica Consistorial</p>
+          <p class="cd-footer-brand-sub">Dermatología</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <h4 class="cd-footer-heading">Clínica</h4>
+        <ul class="cd-footer-list">
+          <li><a href="index.html" class="cd-footer-link">Inicio</a></li>
+          <li><a href="clinica.html" class="cd-footer-link">Conoce la Clínica</a></li>
+          <li><a href="equipo.html" class="cd-footer-link">Nuestro Equipo</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <h4 class="cd-footer-heading">Contacto</h4>
+        <p>Av. Consistorial 5791, Peñalolén</p>
+        <p>+56 9 XXXX XXXX</p>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <h4 class="cd-footer-heading">Horarios</h4>
+        <p>Lun–Vie 9:00–18:00</p>
+        <p>Sáb: Flexible</p>
+      </div>
+    </div>
+
+    <div class="footer-social">
+        <span class="social-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#B59652" stroke-width="1.6">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.3" cy="6.7" r="1" fill="#B59652" stroke="none"></circle>
+          </svg></span>
+        <span class="social-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B59652" stroke-width="1.6">
+            <path d="M15 8h-2a2 2 0 00-2 2v2H9v3h2v7h3v-7h2.2l.8-3H14v-1.5c0-.6.3-1 1-1h1.5z"></path>
+          </svg></span>
+        <span class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B59652" stroke-width="1.6">
+            <path d="M20 12a8 8 0 10-14.5 4.6L4 21l4.6-1.4A8 8 0 0020 12z"></path>
+            <path d="M9 10.5c0 3 2.5 5.5 5.5 5.5" stroke-linecap="round"></path>
+          </svg></span>
+      </div>
+
+    <div class="d-flex flex-column align-items-center cd-footer-bottom">
+      <p class="cd-footer-copy">
+        © 2026 Clínica Consistorial Dermatología. Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BOTÓN FLOTANTE WHATSAPP ============ -->
+<a href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer" class="cd-whatsapp-float" aria-label="Chatear por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.362.687 4.564 1.872 6.415L4 29l7.79-1.834A11.94 11.94 0 0016.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.6a9.55 9.55 0 01-4.87-1.33l-.35-.207-4.62 1.088 1.108-4.502-.228-.366A9.553 9.553 0 016.4 15c0-5.294 4.307-9.6 9.601-9.6 5.293 0 9.6 4.306 9.6 9.6 0 5.294-4.307 9.6-9.6 9.6zm5.264-7.19c-.288-.144-1.703-.84-1.967-.936-.264-.096-.456-.144-.648.144-.192.288-.744.936-.912 1.128-.168.192-.336.216-.624.072-.288-.144-1.216-.448-2.317-1.43-.856-.763-1.434-1.706-1.602-1.994-.168-.288-.018-.444.126-.588.129-.128.288-.336.432-.504.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.648-1.563-.888-2.14-.234-.562-.472-.486-.648-.495l-.552-.01c-.192 0-.504.072-.768.36-.264.288-1.008.984-1.008 2.4 0 1.416 1.032 2.784 1.176 2.976.144.192 2.03 3.1 4.918 4.347.687.297 1.223.474 1.641.606.689.219 1.316.188 1.812.114.553-.083 1.703-.696 1.943-1.369.24-.672.24-1.248.168-1.368-.072-.12-.264-.192-.552-.336z"/></svg>
+</a>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('is-open');
+  });
+</script>
+
+</body>
+</html>

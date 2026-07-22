@@ -1,10 +1,7 @@
 /* =========================================================
    Clínica Consistorial Dermatología
    Hoja de estilo complementaria a Bootstrap 5.
-   Contiene únicamente los atributos que Bootstrap no provee
-   por defecto: paleta de colores propia, tipografías,
-   tamaños/espaciados exactos del diseño original, gradientes,
-   sombras, animaciones y componentes a medida.
+   Creada por Rodolfo Moreno
    ========================================================= */
 
 :root {
@@ -20,7 +17,7 @@
 
   --marfil:#EFE9DF;
   --arena:#D8CFBF;
-  --cream: #e2d7c7;
+  --cream: #FAFAF6;
   --cream-warm: #F5F0E6;
 
   --charcoal: #1A1816;
@@ -30,7 +27,8 @@
 
 html { scroll-behavior: smooth; }
 
-#servicios, #nosotros, #contacto { scroll-margin-top: 100px; }
+#servicios, #nosotros, #contacto,
+#consulta, #cirugia, #estetica, #laser, #crioterapia { scroll-margin-top: 100px; }
 
 body {
   background-color: var(--cream);
@@ -105,7 +103,7 @@ body {
   .cd-header-inner { padding-left: 40px; padding-right: 40px; }
 }
 
-.cd-logo { height: 75px; width: auto; }
+.cd-logo { height: 65px; width: auto; }
 @media (max-width: 500px) { .cd-logo { height: auto; margin-right: 1em; } }
 
 
@@ -120,7 +118,7 @@ body {
   text-decoration: none;
   transition: color 0.2s;
 }
-.cd-nav-link.on{border-bottom: 1px solid #4d4125;}
+.cd-nav-link.on{border-bottom: 1px solid #4d4125;font-weight: 600;}
 .cd-nav-link:hover { color: var(--gold); }
 
 .cd-btn-outline-gold {
@@ -212,7 +210,7 @@ body {
   font-weight: 400;
   line-height: 1.8;
   color: var(--muted);
-  max-width: 384px;
+  /*max-width: 384px;*/
   margin-bottom: 40px;
 }
 
@@ -312,7 +310,7 @@ body {
 
 .service-card {
   position: relative;
-  height: 350px;
+  height: 390px;
   border-radius: 25px;
   overflow: hidden;
   transition: transform .35s, box-shadow .35s;
@@ -671,7 +669,7 @@ body {
 
 .cd-footer { background-color: #141210; border-top: 1px solid rgba(196, 162, 82, 0.15); }
 
-.cd-footer-inner { max-width: 1280px; padding: 64px 24px; }
+.cd-footer-inner { max-width: 1280px; padding: 64px 24px 15px 24px; }
 @media (min-width: 1024px) { .cd-footer-inner { padding-left: 40px; padding-right: 40px; } }
 
 .cd-footer-brand-block { margin-bottom: 20px; }
@@ -862,4 +860,226 @@ body {
 
     color:#777;
 
+}
+
+/* =========================================================
+   PÁGINAS INTERNAS (servicios / equipo / clinica / contacto)
+   ========================================================= */
+
+/* ---- Hero de página (breadcrumb + título) ---- */
+.cd-page-hero { padding-top: 100px; background-color: var(--cream-warm); }
+
+.cd-page-hero-inner { padding-top: 54px; padding-bottom: 54px; }
+@media (min-width: 1024px) { .cd-page-hero-inner { padding-top: 60px; padding-bottom: 70px; } }
+
+.cd-breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 32px; }
+.cd-breadcrumb a { font-size: 11px; font-weight: 500; letter-spacing: 0.025em; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.cd-breadcrumb a:hover { color: var(--gold); }
+.cd-breadcrumb .sep { color: rgba(196, 162, 82, 0.6); font-size: 10px; }
+.cd-breadcrumb .current { font-size: 11px; font-weight: 500; letter-spacing: 0.025em; color: var(--gold); }
+
+.cd-page-hero-row { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+
+.cd-page-title { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 600; color: var(--charcoal); line-height: 1.08; }
+@media (min-width: 1024px) { .cd-page-title { font-size: 3.6rem; } }
+
+.cd-page-lead { margin-top: 16px; font-size: 15px; font-weight: 400; color: var(--muted); line-height: 1.6; max-width: 512px; }
+
+.cd-page-hero-corner { display: none; width: 80px; height: 80px; border-right: 1px solid rgba(196, 162, 82, 0.4); border-bottom: 1px solid rgba(196, 162, 82, 0.4); margin-bottom: 8px; flex-shrink: 0; }
+@media (min-width: 1024px) { .cd-page-hero-corner { display: block; } }
+
+.cd-page-hero-line { height: 1px; background: linear-gradient(to right, rgba(196, 162, 82, 0.4), rgba(196, 162, 82, 0.15), transparent); }
+
+/* ---- Detalle de servicios (filas alternadas) ---- */
+.cd-service-detail { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid #E8E2D8; }
+@media (min-width: 1024px) { .cd-service-detail { grid-template-columns: 1fr 1fr; } }
+.cd-service-detail:last-child { border-bottom: none; }
+
+.cd-service-media { position: relative; overflow: hidden; background: var(--cream-warm); min-height: 320px; }
+@media (min-width: 1024px) { .cd-service-media { min-height: 480px; } }
+
+.cd-service-body { display: flex; flex-direction: column; justify-content: center; padding: 48px 32px; }
+@media (min-width: 1024px) { .cd-service-body { padding: 48px 56px; } }
+
+.cd-service-num-row { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+.cd-service-num { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 600; line-height: 1; color: rgba(196, 162, 82, 0.2); }
+.cd-service-num-line { height: 1px; flex: 1; background: rgba(196, 162, 82, 0.2); }
+
+.cd-service-eyebrow-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.cd-service-eyebrow-line { height: 1px; width: 32px; background: var(--gold); flex-shrink: 0; }
+.cd-service-eyebrow { font-size: 10.5px; font-weight: 600; letter-spacing: 0.18em; color: var(--gold); text-transform: uppercase; }
+
+.cd-service-title { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 600; color: var(--charcoal); margin-bottom: 20px; line-height: 1.3; }
+@media (min-width: 768px) { .cd-service-title { font-size: 32px; } }
+
+.cd-service-desc { font-size: 14.5px; font-weight: 400; line-height: 1.85; color: #6A6560; margin-bottom: 28px; max-width: 512px; }
+
+.cd-service-list { list-style: none; padding: 0; margin: 0 0 36px; }
+.cd-service-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.cd-service-list li:last-child { margin-bottom: 0; }
+.cd-service-list .dot { margin-top: 8px; width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+.cd-service-list .txt { font-size: 13.5px; font-weight: 400; color: var(--charcoal); line-height: 1.5; }
+
+.cd-btn-outline-gold-static {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.cd-btn-outline-gold-static:hover { background-color: var(--gold); color: #fff; }
+.cd-btn-outline-gold-static .cd-arrow { transition: transform 0.2s; }
+.cd-btn-outline-gold-static:hover .cd-arrow { transform: translateX(4px); }
+
+/* ---- Página Clínica: Misión ---- */
+.cd-mission-section { padding: 80px 0; background-color: var(--cream); }
+.cd-mission-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
+@media (min-width: 1024px) { .cd-mission-grid { grid-template-columns: 1fr 1fr; gap: 64px; } }
+
+.cd-mission-title { font-size: 32px; font-weight: 600; color: var(--charcoal); line-height: 1.1; margin-bottom: 24px; }
+@media (min-width: 1024px) { .cd-mission-title { font-size: 44px; } }
+
+.cd-mission-p1 { font-size: 15px; font-weight: 400; line-height: 1.9; color: #6A6560; margin-bottom: 20px; }
+.cd-mission-p2 { font-size: 14.5px; font-weight: 400; line-height: 1.85; color: var(--muted); margin: 0; }
+
+.cd-mission-image { position: relative; overflow: hidden; background-color: var(--cream-warm); aspect-ratio: 4 / 3; }
+.cd-mission-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cd-mission-image-corner { position: absolute; top: 24px; left: 24px; width: 56px; height: 56px; border-left: 1px solid rgba(196, 162, 82, 0.6); border-top: 1px solid rgba(196, 162, 82, 0.6); pointer-events: none; }
+
+/* ---- Página Clínica: Pilares expandidos ---- */
+.cd-pillars-expanded-section { padding: 80px 0; background-color: var(--cream-warm); }
+
+.cd-pillars-expanded-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+@media (min-width: 768px) { .cd-pillars-expanded-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.cd-pillar-card { display: flex; align-items: flex-start; gap: 20px; padding: 32px; background-color: var(--cream); border: 1px solid #E8E2D8; transition: border-color 0.25s; }
+.cd-pillar-card:hover { border-color: rgba(196, 162, 82, 0.3); }
+.cd-pillar-card-icon { flex-shrink: 0; margin-top: 4px; width: 40px; height: 40px; color: var(--gold); }
+.cd-pillar-card-number { display: block; font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 600; line-height: 1; color: rgba(196, 162, 82, 0.15); margin-bottom: 4px; user-select: none; }
+.cd-pillar-card-title { font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 600; color: var(--charcoal); margin-bottom: 12px; }
+.cd-pillar-card-body { font-size: 13.5px; line-height: 1.8; color: #6A6560; margin: 0; }
+
+/* ---- Página Clínica: Instalaciones ---- */
+.cd-facilities-section { padding: 80px 0; background-color: var(--cream); }
+.cd-facilities-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 768px) { .cd-facilities-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.cd-facility { position: relative; overflow: hidden; background-color: var(--cream-warm); aspect-ratio: 4 / 3; }
+.cd-facility img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s; }
+.cd-facility:hover img { transform: scale(1.05); }
+.cd-facility-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(26, 24, 22, 0.5), transparent); }
+.cd-facility-label { position: absolute; bottom: 16px; left: 20px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; color: rgba(255, 255, 255, 0.9); text-transform: uppercase; margin: 0; }
+
+/* ---- Página Clínica: CTA equipo ---- */
+.cd-team-cta-section { padding: 64px 0; background-color: var(--cream-warm); border-top: 1px solid #E8E2D8; }
+.cd-team-cta-inner { max-width: 896px; margin: 0 auto; padding: 0 24px; text-align: center; }
+.cd-team-cta-title { font-size: 28px; font-weight: 600; color: var(--charcoal); margin-bottom: 16px; }
+.cd-team-cta-desc { font-size: 14.5px; color: var(--muted); margin: 0 auto 32px; max-width: 448px; line-height: 1.6; }
+
+/* ---- Tarjetas de equipo médico ---- */
+.cd-doctor-card { border: 1px solid #E8E2D8; overflow: hidden; background: #fff; }
+
+.cd-doctor-image { height: 300px; overflow: hidden;}
+@media (min-width: 640px) { .cd-doctor-image { height: 480px; } }
+.cd-doctor-image img { width: 100%; height: 100%; object-fit: cover; object-position: top;}
+
+.cd-doctor-info { padding: 24px; background-color: var(--cream); }
+@media (min-width: 640px) { .cd-doctor-info { padding: 40px; } }
+
+.cd-doctor-role-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.cd-doctor-role-line { width: 24px; height: 1px; background: var(--gold); }
+.cd-doctor-role { font-size: 12px; font-weight: 600; letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase; }
+
+.cd-doctor-name { font-size: 26px; font-weight: 600; color: var(--charcoal); margin-bottom: 4px; }
+@media (min-width: 640px) { .cd-doctor-name { font-size: 28px; } }
+.cd-doctor-specialty { font-size: 12px; font-weight: 500; color: var(--muted); letter-spacing: 0.5px; margin-bottom: 24px; }
+.cd-doctor-divider { width: 40px; height: 1px; background: var(--gold); margin-bottom: 20px; }
+
+.cd-doctor-block { margin-bottom: 24px; }
+.cd-doctor-block:last-child { margin-bottom: 0; }
+.cd-doctor-section-title { font-size: 14px; font-weight: 700; letter-spacing: 0.14em; color: rgba(196, 162, 82, 0.8); text-transform: uppercase; margin-bottom: 8px; }
+.cd-doctor-text { font-size: 13px; font-weight: 400; line-height: 1.5; color: var(--charcoal); margin: 0 0 4px; }
+.cd-doctor-text:last-child { margin-bottom: 0; }
+
+.cd-doctor-list-item { font-size: 13px; font-weight: 400; color: var(--charcoal); margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; }
+.cd-doctor-list-item::before { content: ''; display: inline-block; width: 4px; height: 4px; background-color: var(--gold); border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
+
+.cd-interest-tag { display: inline-block; padding: 4px 8px; font-size: 12px; font-weight: 500; border: 1px solid rgba(196, 162, 82, 0.3); color: var(--muted); border-radius: 20px; margin: 0 4px 4px 0; }
+
+/* ---- Contacto ---- */
+.cd-contact-item { display: flex; gap: 12px; margin-bottom: 32px; }
+.cd-contact-item:last-child { margin-bottom: 0; }
+.cd-contact-icon { width: 32px; height: 32px; color: var(--gold); flex-shrink: 0; }
+.cd-contact-label { font-size: 11px; font-weight: 600; letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase; margin: 0 0 4px; }
+.cd-contact-text { font-size: 13px; font-weight: 400; color: var(--charcoal); line-height: 1.6; margin: 0; }
+a.cd-contact-text { text-decoration: none; }
+a.cd-contact-text:hover { color: var(--gold); }
+
+.cd-contact-form .form-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+.cd-contact-form .form-control,
+.cd-contact-form .form-select {
+  border: 1px solid #E8E2D8;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 12px 16px;
+}
+.cd-contact-form .form-control:focus,
+.cd-contact-form .form-select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(196, 162, 82, 0.25);
+}
+
+.cd-map-placeholder {
+  width: 100%;
+  height: 320px;
+  background-color: #E8E2D8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+@media (min-width: 640px) { .cd-map-placeholder { height: 400px; } }
+
+/* ---- Botón flotante de WhatsApp ---- */
+.cd-whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1040;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s, background-color 0.25s;
+}
+.cd-whatsapp-float:hover { background-color: #1DA851; color: #fff; transform: translateY(-3px) scale(1.05); }
+.cd-whatsapp-float svg { width: 30px; height: 30px; }
+@media (max-width: 575.98px) {
+  .cd-whatsapp-float { right: 16px; bottom: 16px; width: 52px; height: 52px; }
+  .cd-whatsapp-float svg { width: 26px; height: 26px; }
 }

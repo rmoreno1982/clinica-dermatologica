@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Raleway', system-ui, sans-serif;
+
+  --color-gold: #C4A252;
+  --color-gold-light: #D4BA78;
+  --color-gold-dark: #A88840;
+  --color-gold-pale: #F2EAD8;
+  --color-cream: #FAFAF6;
+  --color-cream-warm: #F5F0E6;
+  --color-charcoal: #1A1816;
+  --color-charcoal-mid: #2C2825;
+  --color-muted: #8A847C;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAFAF6;
+  color: #2C2825;
+  font-family: 'Raleway', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(196, 162, 82, 0.25); border-radius: 3px; }
